@@ -6,16 +6,9 @@
 
 
 
-\greet
+
 get_supermarket_info
-\thanks
-other_question
-waiting_for_question
-cheer_up
 recommendation
-did_that_help
-\goodbay
-\happy
 
 
 
@@ -146,6 +139,8 @@ did_that_help
 
 
 
+
+
 ## intent:next_step
 - continue to next step
 - go to the next step
@@ -162,6 +157,53 @@ did_that_help
 - please go to the next step
 - take me to the next step
 - what is the next step ?
+
+## intent:nicetomeetyou
+- Delighted to make your acquaintance.
+- Feels great to see you!
+- Glad to make your acquaintance.
+- Glad to meet you
+- Glad to meet you!
+- Glad to meet you.
+- Glad we've met.
+- Good to meet you!
+- Good to see you!
+- Great interacting with you
+- Great seeing you
+- Great to meet you!
+- Great to meet you.
+- Happy to get to see you.
+- Hi, glad to meet you.
+- Hi, nice to meet you!
+- I am glad I met you.
+- I had a great meeting with you
+- I'm glad to have met you!
+- I'm glad to meet you!
+- I'm happy that we have met!
+- I'm pleased to meet you!
+- I'm so happy that I could meet you.
+- I'm thrilled to meet you!
+- It is indeed a pleasure to be able to meet you.
+- It was a pleasure to have your company.
+- It was nice to have met you
+- It's a pleasure to make your acquaintance!
+- It's a pleasure to meet you!
+- It's good that I could meet you. It was a pleasure.
+- It's great to get to know you!
+- It's great to make your acquaintance!
+- It's nice to finally meet you.
+- It's wonderful to meet you!
+- It’s a pleasure to meet you
+- It’s great connecting with you.
+- Lovely to meet you.
+- Nice to have met you.
+- Pleased to make your acquaintance!
+- Pleased to meet you!
+- Pleased to meet you.
+- See you around. It was a pleasure meeting you.
+- Thank you for this meeting. It was great to see you.
+- nice to meet you
+
 
 
 
@@ -287,55 +329,6 @@ did_that_help
 - to make a subscribtion
 - yes I would like to subscribe
 - yes subscribe me
-
-## intent:nicetomeetyou
-- Delighted to make your acquaintance.
-- Feels great to see you!
-- Glad to make your acquaintance.
-- Glad to meet you
-- Glad to meet you!
-- Glad to meet you.
-- Glad we've met.
-- Good to meet you!
-- Good to see you!
-- Great interacting with you
-- Great seeing you
-- Great to meet you!
-- Great to meet you.
-- Happy to get to see you.
-- Hi, glad to meet you.
-- Hi, nice to meet you!
-- I am glad I met you.
-- I had a great meeting with you
-- I'm glad to have met you!
-- I'm glad to meet you!
-- I'm happy that we have met!
-- I'm pleased to meet you!
-- I'm so happy that I could meet you.
-- I'm thrilled to meet you!
-- It is indeed a pleasure to be able to meet you.
-- It was a pleasure to have your company.
-- It was nice to have met you
-- It's a pleasure to make your acquaintance!
-- It's a pleasure to meet you!
-- It's good that I could meet you. It was a pleasure.
-- It's great to get to know you!
-- It's great to make your acquaintance!
-- It's nice to finally meet you.
-- It's wonderful to meet you!
-- It’s a pleasure to meet you
-- It’s great connecting with you.
-- Lovely to meet you.
-- Nice to have met you.
-- Pleased to make your acquaintance!
-- Pleased to meet you!
-- Pleased to meet you.
-- See you around. It was a pleasure meeting you.
-- Thank you for this meeting. It was great to see you.
-- nice to meet you
-
-
-
 
 ## intent:mood_great
 - perfect
