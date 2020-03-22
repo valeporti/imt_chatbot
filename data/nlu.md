@@ -1,58 +1,878 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
-
-## intent:goodbye
-- bye
-- goodbye
-- see you around
-- see you later
-
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
-
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
 
+
+
+
+get_supermarket_info
+recommendation
+
+
+
+## intent:affirm
+## intent:goodbye
+## intent:deny
+## intent:greet
+## intent:mood_unhappy
+## intent:mood_great
+## intent:subscribe
+## intent:telljoke
+## intent:thanks
+
+
+## intent:next_step
+## intent:nicetomeetyou
+
+
+## intent:request_info
+- do you have their [address](info)
+- do you have its [phone number](info)
+- can i have their [phone number](info)
+- what is the [phone number](info) of the restaurant
+- what is their [address](info)
+- may i have the [address](info) of the restaurant
+- whats their [address](info)
+- do you have their [phone number](info)
+- give me their [phone number](info)
+- whats their [phone number](info)
+- do you have its [address](info)
+- may i have the [phone number](info) of the restaurant
+- what is their [phone number](info)
+- give me their [address](info)
+- can i have their [address](info)
+- what is the [address](info) of the restaurant
+
+
+
 ## intent:query_knowledge_base
+- what [restaurants](object_type:restaurant) can you recommend?
+- list some [restaurants](object_type:restaurant)
+- can you name some [restaurants](object_type:restaurant) please?
+- can you show me some [restaurant](object_type:restaurant) options
+- list [German](cuisine) [restaurants](object_type:restaurant)
+- do you have any [mexican](cuisine) [restaurants](object_type:restaurant)?
+- do you know the [price range](attribute:price-range) of [that one](mention)?
+- what [cuisine](attribute) is [it](mention)?
+- do you know what [cuisine](attribute) the [last one](mention:LAST) has?
+- does [Donath](restaurant) have [outside seating](attribute:outside-seating)?
+- what is the [price range](attribute:price-range) of [Berlin Burrito Company](restaurant)?
+- what is with [I due forni](restaurant)?
+- Do you also have any [Vietnamese](cuisine) [restaurants](object_type:restaurant)?
+- What about any [Mexican](cuisine) [restaurants](object_type:restaurant)?
+- Do you also know some [Italian](cuisine) [restaurants](object_type:restaurant)?
+- can you tell me the [price range](attribute) of [that restaurant](mention)?
+- what [cuisine](attribute) do [they](mention) have?
+- what [hotels](object_type:hotel) can you recommend?
+- please list some [hotels](object_type:hotel) in [Frankfurt am Main](city) for me
+- what [hotels](object_type:hotel) do you know in [Berlin](city)?
+- name some [hotels](object_type:hotel) in [Berlin](city)
+- show me some [hotels](object_type:hotel)
+- what are [hotels](object_type:hotel) in [Berlin](city)
+- does the [last](mention:LAST) one offer [breakfast](attribute:breakfast-included)?
+- does the [second one](mention:2) [include breakfast](breakfast-included)?
+- what is the [price range](attribute:price-range) of the [second](mention:2) hotel?
+- does the [first](mention:1) one has [wifi](attribute:free-wifi)?
+- does the [third](mention:3) one has a [swimming pool](attribute:swimming-pool)?
+- what is the [star rating](attribute:star-rating) of [Berlin Wall Hostel](hotel)?
+- Does the [Hilton](hotel) has a [swimming pool](attribute:swimming-pool)?
+
+
+## intent:ask_restaurant
+- Any good restaurants nearby?
+- Can you find a restaurant for me?
+- Can you find me a burger joint?
+- Can you find me a restaurant?
+- Can you recommend a restaurant open right now
+- Could you find a restaurant for me?
+- Could you find me a restaurant to eat at?
+- Could you find me a restaurant?
+- Do you find me a restaurant?
+- Do you seek me a restaurant?
+- Find a restaurant for me to eat at.
+- Find a restaurant for me where I can eat.
+- Find a restaurant for me?
+- Find me a fast food restaurant.
+- Find me a place to eat
+- Find me a restaurant where I can eat.
+- Have you seen me a restaurant?
+- Help me find a restaurant
+- Help me with finding this restaurant
+- Hey help me find a restaurant
+- Hey, can you help me with locating this restaurant.
+- Hi, can you give me the nearest fast food place?
+- How can you help me find a restaurant.
+- I am hungry, find me some place to go
+- I need a new restaurant
+- I need a restaurant.
+- I need to find this restaurant
+- I'm gonna need help finding a restaurant
+- I'm looking for a Spanish restaurant.
+- IS there any near by restaurant?
+- Is there any restaurant?
+- Pick a restaurant for me, please
+- Recommend me a restaurant around here.
+- Show me how to find a restaurant
+- Show me the closest open restaurant
+- Suggest me a good restaurant around
+- What restaurant would you recommend for dinner?
+- What's a good place to eat nearby
+- What's the closest restaurant open near me
+- Where is the restaurant
+- Where should I eat?
+- Where should I go for dinner?
+- Will you find me a restaurant?
+- Would you find a restaurant for me?
+- Would you find any restaurant?
+- Would you find me a restaurant?
+- can i be shown a gluten free restaurant
+- can you find me a restaurant?
+- help me find restaurant
+- i want a french restaurant
+- i'm looking for a Chinese restaurant
+- restaurants
+- will you see any restaurant for me?
+- I want to find some restauant nearby
+- show me restaurents
+
+
+
+
+
+## intent:next_step
+- continue to next step
+- go to the next step
+- i have to go to the next step
+- i want next step
+- i want to go to the next step
+- next please
+- next step
+- next step now
+- next step please
+- next step pls
+- ok continue please
+- ok, next step
+- please go to the next step
+- take me to the next step
+- what is the next step ?
+
+## intent:nicetomeetyou
+- Delighted to make your acquaintance.
+- Feels great to see you!
+- Glad to make your acquaintance.
+- Glad to meet you
+- Glad to meet you!
+- Glad to meet you.
+- Glad we've met.
+- Good to meet you!
+- Good to see you!
+- Great interacting with you
+- Great seeing you
+- Great to meet you!
+- Great to meet you.
+- Happy to get to see you.
+- Hi, glad to meet you.
+- Hi, nice to meet you!
+- I am glad I met you.
+- I had a great meeting with you
+- I'm glad to have met you!
+- I'm glad to meet you!
+- I'm happy that we have met!
+- I'm pleased to meet you!
+- I'm so happy that I could meet you.
+- I'm thrilled to meet you!
+- It is indeed a pleasure to be able to meet you.
+- It was a pleasure to have your company.
+- It was nice to have met you
+- It's a pleasure to make your acquaintance!
+- It's a pleasure to meet you!
+- It's good that I could meet you. It was a pleasure.
+- It's great to get to know you!
+- It's great to make your acquaintance!
+- It's nice to finally meet you.
+- It's wonderful to meet you!
+- It’s a pleasure to meet you
+- It’s great connecting with you.
+- Lovely to meet you.
+- Nice to have met you.
+- Pleased to make your acquaintance!
+- Pleased to meet you!
+- Pleased to meet you.
+- See you around. It was a pleasure meeting you.
+- Thank you for this meeting. It was great to see you.
+- nice to meet you
+
+
+
+
+
+
+
+
+
+## intent:thanks
+- Cool. Thanks
+- Great, thanks
+- Thank you
+- Thank you so much
+- Thank's!
+- Thanks
+- Thanks bot
+- Thanks for that
+- Thanks!
+- amazing, thanks
+- cheers
+- cheers bro
+- cool thank you
+- cool thanks
+- cool, thanks
+- danke
+- great thanks
+- ok thanks
+- ok thanks sara
+- ok thanks!
+- perfect thank you
+- thank u
+- thank you
+- thank you anyways
+- thanks
+- thanks a bunch for everything
+- thanks a lot
+- thanks for the help
+- thanks this is great news
+- thanks you
+- thanks!
+- thankyou
+- thnks
+- thx
+- yes thanks
+
+## intent:telljoke
+- Can you tell a joke?
+- Can you tell me a joke.
+- Come up with a joke you think I'll find funny.
+- Could you please share a joke with me.
+- Could you tell me a joke.
+- Do you have any jokes?
+- Do you know any jokes?
+- Entertain me with a joke.
+- Give me a funny joke.
+- Give me a joke.
+- Give me some comic relief.
+- I need a good joke.
+- I want to hear something funny.
+- Know any jokes?
+- Let's hear a joke from you.
+- Make me laugh.
+- Please tell me a joke.
+- Say something funny.
+- Share a joke with me!
+- Tell joke.
+- Tell me something funny.
+- Tell me something humorous!
+- Tell me something that you think will make me laugh.
+- Tell me the best joke you know.
+- What's a good joke?
+- Will you tell me a joke.
+- Would you share a joke with me.
+- Would you tell me a joke
+- give me a good joke
+- make me laugh with a bad joke
+- make me laugh with a joke
+- say a funny joke
+- say a joke
+- say a joke that's funny
+- say a joke that's so bad it's funny
+- tell me a joke
+- tell me a short joke
+- tell me a story joke
+- tell me something funny, like a joke
+- you can say a jok
+
+## intent:subscribe
+- I also want to subscribe
+- I want to sign up
+- I want to subscribe
+- I would like to sign up
+- I would love to subscribe!
+- I'd like to subscribe
+- Sign me up.
+- Sign up.
+- Subscribe
+- Subscribe me please!
+- Subscribe me
+- add me as your subscriber
+- add me to the subscription list
+- but please sign me up 
+- can i sign up
+- can i subscribe
+- can you pelase subscribe me
+- can you subscribe me
+- get a subscription
+- how to subdcribe?
+- i also want to sign up 
+- i want subscribe
+- i want to  suscribe
+- i want to signup
+- i want to subscribe
+- i would like to subscribe 
+- id like to subscribe
+- oh actually i want
+- please subscribe me
+- register me
+- sign me up
+- subcribe
+- subscribe
+- subscrime me
+- to make a subscribtion
+- yes I would like to subscribe
+- yes subscribe me
+
+## intent:mood_great
+- perfect
+- very good
+- amazing
+- wonderful
+- I am feeling very good
+- I am great
+- I'm good
+- :)
+- :D
+- I am happy
+- nice
+- WOW
+- Wow
+- nice.
+- really cool
+- happy
+- i am feeling happy
+- i am happy
+- i am happy today
+- it's pretty cool
+- today was a nice day
+- wow
+- awesome
+- cool
+- cool man
+- doin great
+- funny
+- great
+- pretty cool :D
+
+## intent:mood_unhappy
+- very sad
+- unhappy
+- very bad
+- awful
+- terrible
+- not very good
+- extremely sad
+- so sad
+- I am feeling bad
+- I am sad
+- I am super sad
+- I'm sad
+- I'm super sad
+- Now I'm sad
+- This is bad
+- bad
+- crappy joke
+- i am feel sad
+- i am sad
+- i am sad about that
+- i am very sad
+- i feel sad
+- i sad
+- i'm sad
+- sad
+- so sad
+- so sad :(
+- super sad
+- very very sad
+
+## intent:greet
+- Bom dia
+- Bonjour
+- Good Morning
+- Good morning
+- Good mourning
+- Guten Morgen
+- HELLO
+- HEY
+- HEllo
+- HI
+- Hallo
+- Hei
+- Hellllooooooo
+- Hello
+- Hello Bot
+- Hello!
+- Hey
+- Hey bot
+- Heya
+- Heylo
+- Hi
+- Hi bot
+- Hi man
+- Hi there
+- Hi!
+- Hi'
+- Hi,
+- Hi, bot
+- Hieee
+- Hieeeeeeeeeeeee
+- Hola
+- I said, helllllloooooO!!!!
+- Well hello there ;)
+- What is up?
+- Whats up
+- Whats up my bot
+- Whats up?
+- ayyyy whaddup
+- bonjour
+- ey boss
+- good evening
+- good moring
+- good morning
+- greet
+- greetings
+- hai
+- hallo
+- halloo
+- halloooo
+- halo
+- heeey
+- heelio
+- hell9o
+- hellio
+- hello
+- hello everybody
+- hello friend
+- hello hi
+- hello is anybody there
+- hello it is me again
+- hello robot
+- hello sara
+- hello sweatheart
+- hello sweet boy
+- hello there
+- hello world
+- hello?
+- hello]
+- hellooo
+- helloooo
+- helo
+- hey
+- hey bot
+- hey bot!
+- hey dude
+- hey hey
+- hey let's talk
+- hey ther
+- hey there
+- hey there boy
+- hey there..
+- hey, let's talk
+- heya
+- heyho
+- heyo
+- hhola
+- hi
+- hi !
+- hi Mister
+- hi again
+- hi can you speak ?
+- hi folks
+- hi friend
+- hi friends
+- hi hi
+- hi mrs rasa
+- hi pal!
+- hi sara
+- hi there
+- hi there it's me
+- hi!
+- hi?
+- hieee
+- hii
+- hiihihi
+- hiii
+- hlo
+- hola
+- howdy
+- jojojo
+- jop
+- konichiwa
+- merhaba
+- salut
+- sup
+- wasssup
+- wasssup!
+- what up
+- whats popping
+- whats up
+- yo
+- yoo
+
+## intent:deny
+- I don't want to
+- I don't want to give it to you
+- I don't want to say
+- I dont want to tell
+- I'm not going to give it to you
+- NEIN
+- NO
+- NO DON"T WANT THIS!
+- Nah
+- Neither
+- Never
+- Nevermind
+- No
+- No thank you
+- No, not really.
+- No, thank you
+- No.
+- Nopes
+- Not really
+- absolutely not
+- decline
+- definitely not
+- deny
+- i decline
+- i don not like this
+- i don't think so
+- i don't want either of those
+- i don't want to
+- i don't want to give you my email
+- i dont want to
+- i dont want to accept :P lol
+- i guess it means - no
+- i'm afraid not
+- i'm not sure
+- it is going pretty badly
+- it sucks
+- it sux
+- n
+- na
+- nah
+- nah I'm good
+- nah not for me
+- nah, first time
+- nah, i'm good
+- nehi
+- nein
+- neither
+- never
+- never mind
+- no
+- no :(
+- no I dont want
+- no and no again
+- no bots at all
+- no go
+- no i can't
+- no i don't accept
+- no i dont want to
+- no i dont want to accept :P lol
+- no i won't
+- no ma'am
+- no sir
+- no sorry
+- no thank s
+- no thank you
+- no thanks
+- no way
+- no you did it wrong
+- no!!!!
+- no, i hate it
+- no, my frst time
+- no, thank you
+- no, thanks
+- no, thankyou
+- non
+- noooooooooo
+- noooooooooooooooooooooooooooooooooooooooo
+- nop
+- nope
+- nope!
+- nope. i am good
+- not going well at all
+- not really
+- not right now
+- not yet
+- nö
+- sorry not right now
+- still dont want to tell
+- thanks but no thanks
+- this sucks
+- very bad
+- no stop
+- stop it, i do not care!!!
+
+## intent:goodbye
+- Bye
+- Bye bye
+- adios
+- adios?
+- bye
+- bye .
+- bye :P
+- bye bot
+- bye bye
+- bye bye bot
+- bye for now
+- bye udo
+- bye was nice talking to you
+- bye!
+- byee
+- catch you later
+- ciao
+- cya
+- farewell
+- good bye
+- good bye rasa bot!
+- good night
+- goodbye
+- goodbye.
+- goodnight
+- gotta go
+- k byyye #slay
+- ok Bye
+- ok bye
+- ok, bye
+- ok.bye
+- see u later
+- see ya
+- see you
+- see you . bye
+- take care
+- then bye
+- tlak to you later
+- toodle-oo
+
+## intent:affirm
+- Accept
+- Awesome!
+- Cool
+- Good
+- Great
+- I accept
+- I accept.
+- I agree
+- I am using it
+- I changed my mind. I want to accept it
+- I do
+- I get it
+- I guess so
+- I have used it in the past
+- I will
+- I'd absolutely love that
+- I'm sure I will!
+- I'm using it
+- Nice
+- OK
+- Ofcourse
+- Oh yes
+- Oh, ok
+- Ok
+- Ok let's start
+- Ok.
+- Okay
+- Okay!
+- PLEASE
+- SURE
+- Sure
+- Sweet
+- That would be great
+- YES
+- YUP
+- Yea
+- Yeah
+- Yeah sure
+- Yep
+- Yep that's fine
+- Yep!
+- Yepp
+- Yes
+- Yes I do
+- Yes please
+- Yes please!
+- Yes, I accept
+- Yes.
+- Yup
+- a little
+- absolutely
+- accept
+- accepted
+- agreed
+- ah ok
+- alright
+- alright, cool
+- amayzing
+- amazing!
+- awesome
+- awesome!
+- confirm
+- cool
+- cool :)
+- cool story bro
+- cool!
+- coolio
+- definitely yes without a doubt
+- done
+- fair enough
+- fcourse
+- fine
+- fuck yeah!
+- go
+- go ahead
+- go for it
+- going super well
+- good
+- good.
+- great
+- great lets do that
+- great!
+- hell yeah
+- hell yes
+- hm, i'd like that
+- how nice!
+- i accept
+- i agree
+- i am!
+- i want that
+- i will!
+- it is ok
+- its okay
+- ja
+- ja cool
+- ja thats great
+- jezz
+- jo
+- k
+- kk
+- lets do it
+- lets do this
+- nice
+- not bad
+- of course
+- ofcoure i do
+- ofcourse
+- oh awesome!
+- oh cool
+- oh good !!
+- oh super
+- ok
+- ok cool
+- ok fine
+- ok friend
+- ok good
+- ok great
+- ok i accept
+- ok sara
+- ok, I behave now
+- ok, I understood
+- ok, Sara
+- ok...
+- okay
+- okay cool
+- okay sure
+- okay..
+- oki doki
+- okie
+- ook
+- oui
+- perfect
+- please
+- si
+- sort of
+- sure
+- sure thing
+- sure!
+- that is cool
+- that ok
+- that sounds fine
+- that's great
+- thats fine
+- thats good
+- thats great
+- top
+- uh-huh
+- very much
+- well yes
+- y
+- ya
+- ya cool
+- ya go for it
+- ya i want
+- ya please
+- ya thats cool
+- yaah
+- yap
+- yaps
+- yas
+- yay
+- ye
+- ye splease
+- yea
+- yeah
+- yeah do that
+- yeah sure
+- yeah'=
+- yeah, why not
+- yeeeeezzzzz
+- yeeees
+- yep
+- yep i want that
+- yep if i have to
+- yep please
+- yep that's nice
+- yep thats cool
+- yep, will do thank you
+- yep. :/
+- yes
+- yes ...
+- yes I do
+- yes accept please
+- yes baby
+- yes cool
+- yes give me information
+- yes go ahead
+- yes go for it
+- yes great
+- yes i accept
+- yes i agree
+- yes i have built a bot before
+- yes i have!
+- yes it is
+- yes it was okay
+- yes of course
+- yes pleae
+- yes please
+- yes please!
+- yes pls
+- yes sirfr
+- yes that's great
+- yes that's what i want
+- yes you can
+- yes'
+- yes, I'd love to
+- yes, cool
+- yes, give me information, please
+- yes,i am
+- yes.
+- yesh
+- yess
+- yessoo
+- yesss
+- yesssss
+- yesyestyes
+- yesyesyes
+- yez
+- yop
+- yres
+- ys
+- yup
+- yyeeeh
