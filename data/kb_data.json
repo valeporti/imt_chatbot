@@ -1,0 +1,117 @@
+{
+  "supermarkets": [
+    {
+      "id": 0,
+      "name": "Carrefour",
+      "postal_code": "29280",
+      "express": false,
+      "city": "Plouzané",
+      "link": "https://www.carrefour.fr/magasin",
+      "livraison_domicile": true
+    },
+    {
+      "id": 1,
+      "name": "Carrefour",
+      "postal_code": "29200",
+      "express": false,
+      "city": "Brest",
+      "link": "https://www.carrefour.fr/magasin",
+      "livraison_domicile": true
+    },
+    {
+      "id": 2,
+      "name": "Carrefour Express",
+      "postal_code": "29200",
+      "express": true,
+      "city": "Brest",
+      "link": "https://www.carrefour.fr/magasin",
+      "livraison_domicile": false
+    },
+    {
+      "id": 3,
+      "name": "Lidl Brest",
+      "postal_code": "29200",
+      "express": false,
+      "city": "Brest",
+      "link": "https://www.lidl.fr/fr/",
+      "livraison_domicile": false
+    },
+    {
+      "id": 4,
+      "name": "Lidl Plouzané",
+      "postal_code": "29280",
+      "express": false,
+      "city": "Plouzané",
+      "link": "https://www.lidl.fr/fr/",
+      "livraison_domicile": false
+    },
+    {
+      "id": 5,
+      "name": "U express",
+      "postal_code": "29200",
+      "express": true,
+      "city": "Brest",
+      "link": "https://www.coursesu.com/f-superu-brestrecouvrance-informations?utm_medium=internal&utm_source=GMB",
+      "livraison_domicile": false
+    }
+  ],
+  "hospitals": [
+    {
+      "id": 0,
+      "name": "CHRU Cavale Blanche",
+      "postal_code": "29200",
+      "city": "Brest",
+      "phone": "02 98 22 33 33",
+      "link": "https://www.chu-brest.fr/fr/contact",
+      "localisation" : "https://www.google.com/maps/place/Hopital+de+La+Cavale+Blanche/@48.4001738,-4.5319077,16z/data=!4m5!3m4!1s0x480e1d05d65a15dd:0x338b6d9d3c8d10bf!8m2!3d48.4015105!4d-4.5283949"
+    },
+    {
+      "id": 1,
+      "name": "CHRU Morvan de Brest",
+      "postal_code": "29200",
+      "city": "Brest",
+      "phone": "02 98 22 33 33",
+      "link": "https://www.chu-brest.fr/fr/contact",
+      "localisation" : "https://www.google.com/maps/place/Centre+Hospitalier+R%C3%A9gional+Universitaire+Morvan+de+Brest/@48.3937017,-4.4895564,16.67z/data=!4m8!1m2!2m1!1shopital!3m4!1s0x0:0x467d739fa8b94169!8m2!3d48.3922721!4d-4.4872284"
+    }
+  ],
+  "medics": [
+    {
+      "id": 0,
+      "name": "Memain Jean-Philippe",
+      "phone": "02 98 45 45 78",
+      "postal_code": "28290",
+      "city": "Plouzané",
+      "type": "general",
+      "localisation": "https://www.google.com/maps/place/Memain+Jean-Philippe/@48.369702,-4.5869554,16z/data=!4m8!1m2!2m1!1smedecin!3m4!1s0x0:0x727f12930064b819!8m2!3d48.3686587!4d-4.5880486"
+    },
+    {
+      "id": 1,
+      "name": "LAGADEC-ISSIAKHEM Hamida",
+      "phone": "02 98 28 74 13",
+      "postal_code": "28290",
+      "city": "Plouzané",
+      "type": "general",
+      "localisation": "https://www.google.com/maps/place/Docteur+LAGADEC-ISSIAKHEM+Hamida/@48.3748649,-4.5555339,15z/data=!4m8!1m2!2m1!1smedecin!3m4!1s0x0:0x99ee0a7c0c482b88!8m2!3d48.3723221!4d-4.5895694"
+    }
+  ],
+  "pharmacies": [
+    {
+      "id": 0,
+      "name": "Pharmacie de la trinité",
+      "phone": "02 98 45 54 38",
+      "link": "https://www.pharmaciedelatrinite.com/",
+      "localisation": "https://www.google.com/maps/place/Pharmacie+de+la+Trinit%C3%A9/@48.3698004,-4.5831851,16z/data=!4m8!1m2!2m1!1spharmacie!3m4!1s0x0:0x83f1a098c5992c22!8m2!3d48.3729163!4d-4.5870146"
+    },
+    {
+      "id": 1,
+      "name": "Pharmacie de Coutures-Diébold",
+      "phone": "02 98 45 87 02",
+      "link": "https://pharmacies.pharmaciengiphar.com/pharmacie/pharmacie-de-coutures-diebold/0150299000",
+      "localisation": "https://www.google.com/maps/place/Pharmacie+de+Coutures-Di%C3%A9bold/@48.3688492,-4.5901199,17z/data=!3m1!4b1!4m8!1m2!2m1!1spharmacie!3m4!1s0x0:0x805a0c6770dc1528!8m2!3d48.3688458!4d-4.5879306"
+    }
+  ],
+  "trips": [
+    
+  ]
+}
