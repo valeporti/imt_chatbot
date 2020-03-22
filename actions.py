@@ -25,3 +25,15 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+
+from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
+from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
+
+
+class ActionMyKB(ActionQueryKnowledgeBase):
+    def __init__(self):
+        # load knowledge base with data from the given file
+        knowledge_base = InMemoryKnowledgeBase("./data/kb_data.json")
+
+        super().__init__(knowledge_base)
