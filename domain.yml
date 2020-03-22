@@ -8,12 +8,14 @@ intents:
   - bot_challenge
 
 actions:
+- action_query_knowledge_base
 - utter_greet
 - utter_cheer_up
 - utter_did_that_help
 - utter_happy
 - utter_goodbye
 - utter_iamabot
+- utter_ask_rephrase 
 
 responses:
   utter_greet:
@@ -35,6 +37,7 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_ask_rephrase:
+  - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
+  - text: "Could you please rephrase your message? I didn't quite get that."
+
