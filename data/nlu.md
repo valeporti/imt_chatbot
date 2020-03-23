@@ -4,159 +4,110 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-
-
-
-get_supermarket_info
-recommendation
-
-
-
-## intent:affirm
-## intent:goodbye
-## intent:deny
-## intent:greet
-## intent:mood_unhappy
-## intent:mood_great
-## intent:subscribe
-## intent:telljoke
-## intent:thanks
-
-
-## intent:next_step
-## intent:nicetomeetyou
-
-
-## intent:request_info
-- do you have their [address](info)
-- do you have its [phone number](info)
-- can i have their [phone number](info)
-- what is the [phone number](info) of the restaurant
-- what is their [address](info)
-- may i have the [address](info) of the restaurant
-- whats their [address](info)
-- do you have their [phone number](info)
-- give me their [phone number](info)
-- whats their [phone number](info)
-- do you have its [address](info)
-- may i have the [phone number](info) of the restaurant
-- what is their [phone number](info)
-- give me their [address](info)
-- can i have their [address](info)
-- what is the [address](info) of the restaurant
-
-
-
 ## intent:query_knowledge_base
-- what [restaurants](object_type:restaurant) can you recommend?
-- list some [restaurants](object_type:restaurant)
-- can you name some [restaurants](object_type:restaurant) please?
-- can you show me some [restaurant](object_type:restaurant) options
-- list [German](cuisine) [restaurants](object_type:restaurant)
-- do you have any [mexican](cuisine) [restaurants](object_type:restaurant)?
-- do you know the [price range](attribute:price-range) of [that one](mention)?
-- what [cuisine](attribute) is [it](mention)?
-- do you know what [cuisine](attribute) the [last one](mention:LAST) has?
-- does [Donath](restaurant) have [outside seating](attribute:outside-seating)?
-- what is the [price range](attribute:price-range) of [Berlin Burrito Company](restaurant)?
-- what is with [I due forni](restaurant)?
-- Do you also have any [Vietnamese](cuisine) [restaurants](object_type:restaurant)?
-- What about any [Mexican](cuisine) [restaurants](object_type:restaurant)?
-- Do you also know some [Italian](cuisine) [restaurants](object_type:restaurant)?
-- can you tell me the [price range](attribute) of [that restaurant](mention)?
-- what [cuisine](attribute) do [they](mention) have?
-- what [hotels](object_type:hotel) can you recommend?
-- please list some [hotels](object_type:hotel) in [Frankfurt am Main](city) for me
-- what [hotels](object_type:hotel) do you know in [Berlin](city)?
-- name some [hotels](object_type:hotel) in [Berlin](city)
-- show me some [hotels](object_type:hotel)
-- what are [hotels](object_type:hotel) in [Berlin](city)
-- does the [last](mention:LAST) one offer [breakfast](attribute:breakfast-included)?
-- does the [second one](mention:2) [include breakfast](breakfast-included)?
-- what is the [price range](attribute:price-range) of the [second](mention:2) hotel?
-- does the [first](mention:1) one has [wifi](attribute:free-wifi)?
-- does the [third](mention:3) one has a [swimming pool](attribute:swimming-pool)?
-- what is the [star rating](attribute:star-rating) of [Berlin Wall Hostel](hotel)?
-- Does the [Hilton](hotel) has a [swimming pool](attribute:swimming-pool)?
+- what [supermarkets](object_type:supermarkets) can you recommend?
+- list some [supermarkets](object_type:supermarkets)
+- can you name some [supermarkets](object_type:supermarkets) please?
+- can you show me some [supermarkets](object_type:supermarkets) options
+- list [supermarkets](object_type:supermarkets)
+- do you have any [supermarkets](object_type:supermarkets)?
+- do you know the [address](attribute:address) of [that one](mention)?
+- do you have [their](mention) [address](attribute:address)
+- what is the [address](attribute:address) of [U Express](object_type:supermarkets)
+- what is [their](mention) [address](attribute:address)
+- may i have the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
+- whats [their](mention) [address](attribute:address)
+- do you have [their](mention) [address](attribute:address)
+- give me [their](mention) [address](attribute:address)
+- what is [their](mention) [address](attribute:address)
+- give me [their](mention) [address](attribute:address)
+- can i have [their](mention) [address](attribute:address)
+- what is the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
+- what [city](attribute:city) is [it](mention) in?
+- do you know [city](attribute:city) of the [last one](mention:LAST)?
+- does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
+- what is the [link](attribute:link) of [U Express](object_type:supermarkets)?
+- what [address](attribute:address) do [they](mention) have?
+- can you tell me the [link](attribute:link) of [that supermarket](mention)?
+- what [hospitals](object_type:hospitals) can you recommend?
+- list some [hospitals](object_type:hospitals)
+- can you name some [hospitals](object_type:hospitals) please?
+- can you show me some [hospitals](object_type:hospitals) options
+- list [hospitals](object_type:hospitals)
+- do you have any [hospitals](object_type:hospitals)?
+- do you know the [localisation](attribute:localisation) of [that one](mention)?
+- do you know the [address](attribute:address) of the [second one](mention:2)?
+- do you have the [localisation](attribute:localisation) of [CHRU Morvan](object_type:hospitals)?
+- what is the [phone number](attribute:phone) of [CHRU Morvan](object_type:hospitals)?
+- can you tell me the [link](attribute:link) of [that one](mention)?
+- what [medics](object_type:medics) can you recommend?
+- please list some [medics](object_type:medics) for me
+- what [medics](object_type:medics) do you know?
+- name some [medics](object_type:medics)
+- show me some [medics](object_type:medics)
+- do you have the [phone](attribute:phone) of the [last](mention:LAST) one?
+- what is the [address](attribute:address) of the [second](mention:2)?
+- what is the [phone](attribute:phone) of the [third](mention:2)?
+- does the [first](mention:1) one has [home service](attribute:livraison_domicile)?
+- is the [third](mention:3) one [express](attribute:express)?
+- what [pharmacies](object_type:pharmacies) can you recommend?
+- list some [pharmacies](object_type:pharmacies)
+- can you name some [pharmacies](object_type:pharmacies) please?
+- can you show me some [pharmacies](object_type:pharmacies) options
+- list [pharmacies](object_type:pharmacies)
+- do you have any [pharmacies](object_type:pharmacies)?
 
+## intent:recommendation
+- Any good recommendation?
+- Can you find a recomendation for me?
+- Can you find me a recommendation?
+- Can you recommend an activity?
+- Could you find an activity for me?
+- Find a recommendation for me
+- Find me an activity
+- Help me find ideas to spend time
+- Help me with finding original ideas to spend time
+- Hey help me find things to do
+- Hey, can you help me with activities
+- I am bored, find me activities to do
+- I need a new activity
+- I need a recommendation.
+- I need to find something to do
+- I'm gonna need help finding things to do
+- Recommend me activities
+- Suggest me a good activity
+- Suggest me things to do
+- Would you find me an activity?
+- can you suggest things to do
+- help me find activities
+- show me what can I do
+- tell me what to do
 
-## intent:ask_restaurant
-- Any good restaurants nearby?
-- Can you find a restaurant for me?
-- Can you find me a burger joint?
-- Can you find me a restaurant?
-- Can you recommend a restaurant open right now
-- Could you find a restaurant for me?
-- Could you find me a restaurant to eat at?
-- Could you find me a restaurant?
-- Do you find me a restaurant?
-- Do you seek me a restaurant?
-- Find a restaurant for me to eat at.
-- Find a restaurant for me where I can eat.
-- Find a restaurant for me?
-- Find me a fast food restaurant.
-- Find me a place to eat
-- Find me a restaurant where I can eat.
-- Have you seen me a restaurant?
-- Help me find a restaurant
-- Help me with finding this restaurant
-- Hey help me find a restaurant
-- Hey, can you help me with locating this restaurant.
-- Hi, can you give me the nearest fast food place?
-- How can you help me find a restaurant.
-- I am hungry, find me some place to go
-- I need a new restaurant
-- I need a restaurant.
-- I need to find this restaurant
-- I'm gonna need help finding a restaurant
-- I'm looking for a Spanish restaurant.
-- IS there any near by restaurant?
-- Is there any restaurant?
-- Pick a restaurant for me, please
-- Recommend me a restaurant around here.
-- Show me how to find a restaurant
-- Show me the closest open restaurant
-- Suggest me a good restaurant around
-- What restaurant would you recommend for dinner?
-- What's a good place to eat nearby
-- What's the closest restaurant open near me
-- Where is the restaurant
-- Where should I eat?
-- Where should I go for dinner?
-- Will you find me a restaurant?
-- Would you find a restaurant for me?
-- Would you find any restaurant?
-- Would you find me a restaurant?
-- can i be shown a gluten free restaurant
-- can you find me a restaurant?
-- help me find restaurant
-- i want a french restaurant
-- i'm looking for a Chinese restaurant
-- restaurants
-- will you see any restaurant for me?
-- I want to find some restauant nearby
-- show me restaurents
-
-
-
-
-
-## intent:next_step
-- continue to next step
-- go to the next step
-- i have to go to the next step
-- i want next step
-- i want to go to the next step
-- next please
-- next step
-- next step now
-- next step please
-- next step pls
-- ok continue please
-- ok, next step
-- please go to the next step
-- take me to the next step
-- what is the next step ?
+## intent:what_else
+- what can you do?
+- what else can you do?
+- Can you do something else?
+- Is there other thing you can do?
+- something else 
+- so
+- what now?
+- ...
+- and
+- and...
+- and now what
+- which functions are included
+- Which are your functionalities
+- what now
+- can you give something else
+- is it all?
+- it's all?
+- that's all?
+- is that all?
+- can you help me in other way?
+- do you have more functions?
+- something different to try?
+- may I try something else
+- might I try something different?
 
 ## intent:nicetomeetyou
 - Delighted to make your acquaintance.
@@ -203,14 +154,6 @@ recommendation
 - See you around. It was a pleasure meeting you.
 - Thank you for this meeting. It was great to see you.
 - nice to meet you
-
-
-
-
-
-
-
-
 
 ## intent:thanks
 - Cool. Thanks
@@ -291,52 +234,18 @@ recommendation
 - tell me something funny, like a joke
 - you can say a jok
 
-## intent:subscribe
-- I also want to subscribe
-- I want to sign up
-- I want to subscribe
-- I would like to sign up
-- I would love to subscribe!
-- I'd like to subscribe
-- Sign me up.
-- Sign up.
-- Subscribe
-- Subscribe me please!
-- Subscribe me
-- add me as your subscriber
-- add me to the subscription list
-- but please sign me up 
-- can i sign up
-- can i subscribe
-- can you pelase subscribe me
-- can you subscribe me
-- get a subscription
-- how to subdcribe?
-- i also want to sign up 
-- i want subscribe
-- i want to  suscribe
-- i want to signup
-- i want to subscribe
-- i would like to subscribe 
-- id like to subscribe
-- oh actually i want
-- please subscribe me
-- register me
-- sign me up
-- subcribe
-- subscribe
-- subscrime me
-- to make a subscribtion
-- yes I would like to subscribe
-- yes subscribe me
-
 ## intent:mood_great
+- I am feeling great today
+- I feel pretty fine
 - perfect
+- I feel amazing
 - very good
 - amazing
+- It is a wonderful day
 - wonderful
 - I am feeling very good
 - I am great
+- I feel great
 - I'm good
 - :)
 - :D
@@ -362,12 +271,19 @@ recommendation
 - pretty cool :D
 
 ## intent:mood_unhappy
+- I don't feel fine
+- It's a sad day
+- I feel unhappy
+- I don't feel good today
 - very sad
 - unhappy
 - very bad
+- I feel awful
 - awful
+- I feel terrible
 - terrible
 - not very good
+- I am not very good
 - extremely sad
 - so sad
 - I am feeling bad
@@ -876,3 +792,41 @@ recommendation
 - ys
 - yup
 - yyeeeh
+
+## lookup:supermarkets
+- Carrefour
+- Lidl
+- U Express
+
+## lookup:hospitals
+- CHRU Cavale Blanche
+- CHRU Morvan
+
+## synonym:their
+-its
+
+## synonym:link
+- web page
+- site
+- url
+- website
+
+## synonym:supermarkets
+- supermarket
+- super
+- supers
+
+## synonym:hospitals
+- hospital
+- medic centers
+- medical institution
+- health service
+- CHRU
+
+## synonym:medics
+- medic
+- doctor
+- doctors
+
+## synonym:pharmacies
+- pharmacie
