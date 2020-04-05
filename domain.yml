@@ -1,12 +1,16 @@
 intents:
   - greet
-  - goodbye
+  - query_knowledge_base
+  - get_current_situation
+  - recommendation
+  - user_mood_great
+  - user_mood_unhappy
+  - thanks
   - affirm
+  - goodbye
+  - Tell_jokes
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+  -
 actions:
 - action_query_knowledge_base
 - utter_greet
@@ -15,21 +19,31 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
-- utter_ask_rephrase 
+- utter_ask_rephrase
+- utter_other_question
+- utter_recommendation
+- utter_how_do_you_feel
+- Utter_happy
+- utter_tell_jokes
+- Utter_you_are_welcome
 
-responses:
+template:
   utter_greet:
   - text: "Hey! How are you?"
-
+  - text: "How do you do?"
+  - text: "How are you going"
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "'there there, All is well"
 
   utter_did_that_help:
   - text: "Did that help you?"
+  - text: "Is it useful?"
 
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Tell me more."
 
   utter_goodbye:
   - text: "Bye"
@@ -41,3 +55,9 @@ responses:
   - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
   - text: "Could you please rephrase your message? I didn't quite get that."
 
+Utter_you_are_welcome:
+  - text: "you are welcome."
+  - text: "it is my great honor."
+  - text: "You got it."
+  - text: "Not a problem."
+  - text: "I'm happy to help."
