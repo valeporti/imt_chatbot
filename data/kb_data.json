@@ -2,19 +2,23 @@
   "supermarkets": [
     {
       "id": 0,
-      "name": "Carrefour",
+      "name": "Carrefour Plouzané",
       "postal_code": "29280",
       "express": false,
+      "address": "Rue des Myosotis",
       "city": "Plouzané",
+      "localisation": "https://www.google.com/maps/place/Carrefour/@48.3731119,-4.5865617,15z/data=!4m5!3m4!1s0x0:0xf6527db9fa4cd72e!8m2!3d48.3731119!4d-4.5865617",
       "link": "https://www.carrefour.fr/magasin",
       "livraison_domicile": true
     },
     {
       "id": 1,
-      "name": "Carrefour",
+      "name": "Carrefour Brest",
       "postal_code": "29200",
       "express": false,
+      "address": "126 Boulevard de Plymouth",
       "city": "Brest",
+      "localisation": "https://www.google.com/maps/place/Carrefour/@48.3879787,-4.5281879,17z/data=!3m1!4b1!4m5!3m4!1s0x4816be9ff571f42d:0x7b8df52e045ca282!8m2!3d48.3879752!4d-4.5259939",
       "link": "https://www.carrefour.fr/magasin",
       "livraison_domicile": true
     },
@@ -23,7 +27,9 @@
       "name": "Carrefour Express",
       "postal_code": "29200",
       "express": true,
+      "address": "260 Rue Jean Jaurès",
       "city": "Brest",
+      "localisation": "https://www.google.com/maps/place/Carrefour+City/@48.4019462,-4.4694303,18z/data=!4m12!1m6!3m5!1s0x4816bbd00626c595:0xdbf619799336ff18!2sCarrefour+City!8m2!3d48.4019444!4d-4.4683333!3m4!1s0x4816bbd00626c595:0xdbf619799336ff18!8m2!3d48.4019444!4d-4.4683333",
       "link": "https://www.carrefour.fr/magasin",
       "livraison_domicile": false
     },
@@ -32,7 +38,9 @@
       "name": "Lidl Brest",
       "postal_code": "29200",
       "express": false,
+      "address": "1 Place de Strasbourg",
       "city": "Brest",
+      "localisation": "https://www.google.com/maps/place/Lidl/@48.4029918,-4.4702759,17z/data=!4m12!1m6!3m5!1s0x4816bbcfd7ca0a07:0x5c95d1ea8b3497!2sLidl!8m2!3d48.4029883!4d-4.4680819!3m4!1s0x4816bbcfd7ca0a07:0x5c95d1ea8b3497!8m2!3d48.4029883!4d-4.4680819",
       "link": "https://www.lidl.fr/fr/",
       "livraison_domicile": false
     },
@@ -41,16 +49,20 @@
       "name": "Lidl Plouzané",
       "postal_code": "29280",
       "express": false,
+      "address": "Route de Tremaidic",
       "city": "Plouzané",
+      "localisation": "https://www.google.com/maps/place/Lidl/@48.376258,-4.6004244,17z/data=!4m12!1m6!3m5!1s0x481695f74e3050c5:0xd3ac72e075f46300!2sLidl!8m2!3d48.3762545!4d-4.5982304!3m4!1s0x481695f74e3050c5:0xd3ac72e075f46300!8m2!3d48.3762545!4d-4.5982304",
       "link": "https://www.lidl.fr/fr/",
       "livraison_domicile": false
     },
     {
       "id": 5,
-      "name": "U express",
+      "name": "U Express",
       "postal_code": "29200",
       "express": true,
+      "address": "33 Rue Armorique",
       "city": "Brest",
+      "localisation": "https://www.google.com/maps/place/U+Express+et+drive/@48.3850214,-4.505723,17z/data=!4m12!1m6!3m5!1s0x4816beac8fa4705d:0x5fedfa075b6981c!2sU+Express+et+drive!8m2!3d48.3850179!4d-4.503529!3m4!1s0x4816beac8fa4705d:0x5fedfa075b6981c!8m2!3d48.3850179!4d-4.503529",
       "link": "https://www.coursesu.com/f-superu-brestrecouvrance-informations?utm_medium=internal&utm_source=GMB",
       "livraison_domicile": false
     }
@@ -60,6 +72,7 @@
       "id": 0,
       "name": "CHRU Cavale Blanche",
       "postal_code": "29200",
+      "address": "Boulevard Tanguy Prigent,",
       "city": "Brest",
       "phone": "02 98 22 33 33",
       "link": "https://www.chu-brest.fr/fr/contact",
@@ -67,9 +80,10 @@
     },
     {
       "id": 1,
-      "name": "CHRU Morvan de Brest",
+      "name": "CHRU Morvan",
       "postal_code": "29200",
       "city": "Brest",
+      "address": "2 Avenue Foch",
       "phone": "02 98 22 33 33",
       "link": "https://www.chu-brest.fr/fr/contact",
       "localisation" : "https://www.google.com/maps/place/Centre+Hospitalier+R%C3%A9gional+Universitaire+Morvan+de+Brest/@48.3937017,-4.4895564,16.67z/data=!4m8!1m2!2m1!1shopital!3m4!1s0x0:0x467d739fa8b94169!8m2!3d48.3922721!4d-4.4872284"
@@ -82,6 +96,7 @@
       "phone": "02 98 45 45 78",
       "postal_code": "28290",
       "city": "Plouzané",
+      "address": "2 Route du Dellec",
       "type": "general",
       "localisation": "https://www.google.com/maps/place/Memain+Jean-Philippe/@48.369702,-4.5869554,16z/data=!4m8!1m2!2m1!1smedecin!3m4!1s0x0:0x727f12930064b819!8m2!3d48.3686587!4d-4.5880486"
     },
@@ -91,15 +106,18 @@
       "phone": "02 98 28 74 13",
       "postal_code": "28290",
       "city": "Plouzané",
+      "address": "10 Place du Commerce",
       "type": "general",
       "localisation": "https://www.google.com/maps/place/Docteur+LAGADEC-ISSIAKHEM+Hamida/@48.3748649,-4.5555339,15z/data=!4m8!1m2!2m1!1smedecin!3m4!1s0x0:0x99ee0a7c0c482b88!8m2!3d48.3723221!4d-4.5895694"
     }
-  ],
+  ], 
   "pharmacies": [
     {
       "id": 0,
       "name": "Pharmacie de la trinité",
       "phone": "02 98 45 54 38",
+      "city": "Plouzané",
+      "address": "Rue des Myosotis",
       "link": "https://www.pharmaciedelatrinite.com/",
       "localisation": "https://www.google.com/maps/place/Pharmacie+de+la+Trinit%C3%A9/@48.3698004,-4.5831851,16z/data=!4m8!1m2!2m1!1spharmacie!3m4!1s0x0:0x83f1a098c5992c22!8m2!3d48.3729163!4d-4.5870146"
     },
@@ -107,6 +125,8 @@
       "id": 1,
       "name": "Pharmacie de Coutures-Diébold",
       "phone": "02 98 45 87 02",
+      "city": "Plouzané",
+      "address": "1 Rue de Brest",
       "link": "https://pharmacies.pharmaciengiphar.com/pharmacie/pharmacie-de-coutures-diebold/0150299000",
       "localisation": "https://www.google.com/maps/place/Pharmacie+de+Coutures-Di%C3%A9bold/@48.3688492,-4.5901199,17z/data=!3m1!4b1!4m8!1m2!2m1!1spharmacie!3m4!1s0x0:0x805a0c6770dc1528!8m2!3d48.3688458!4d-4.5879306"
     }
