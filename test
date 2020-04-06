@@ -1,5 +1,17 @@
+## Testing a conversation with a form
+* greet: hi
+    - utter_greet
+* Query_Knowledgebase : i m looking for some information
+    - hospital
+* thankyou: thanks
+    - utter_noworries
 
-## query knowledgebase 
+
+
+
+
+
+## query knowledgebase
 * Greet   # intention
   - utter_greet # actions
 * Query_Knowledgebase
@@ -10,16 +22,6 @@
  * Grateful_words
   - utter_thanks
   - utter_other_questions
-> check_knowledgebase
-
-## asking for recommendation to spend time
-* Kill_Time_Intent{"is_helpful": "YES"}  # how to set a slot
-  - utter_ recommendation
-  - utter_did_that_help 
-> check_recommendation
-
-## query knowledgebase
-> check_knowledgebase
 
 * More_question
   - utter_waiting_for_question
@@ -34,18 +36,18 @@
 
 
 
-## happy path             
+## happy path
 * greet
   - utter_greet
-* user_mood_great      
+* user_mood_great
   - utter_happy
 * goodbey
   - utter_goodbey
 
 
-## sad path               
+## sad path
 * greet
-  - utter_greet            
+  - utter_greet
 * user_mood_unhappy
   - utter_cheer_up
   - utter_did_that_help
