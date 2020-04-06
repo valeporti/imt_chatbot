@@ -32,7 +32,9 @@
   - utter_happy
   - utter_goodbey
 
-
+## Handle spontaneous unhappiness
+* mood_unhappy
+  - utter_mood_unhappy
 
 ## happy path               <!-- name of the story - just for debugging -->
 * greet
