@@ -1,23 +1,37 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
+
+  - bot_challenge
+  - query_knowledge_base
+  - recommendation
+  - what_else
+  - nicetomeetyou
+  - thanks
+  - telljoke
   - mood_great
   - mood_unhappy
-  - bot_challenge
+  - greet
+  - deny
+  - goodbye
+  - affirm
+
+entities:
+  - object_type
+  - mention
+  - attribute
+
+slots:
+  object_type:
+    type: unfeaturized
+  mention:
+    type: unfeaturized
+  attribute:
+    type: unfeaturized
 
 actions:
 - action_query_knowledge_base
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
-- utter_ask_rephrase 
 
 responses:
+
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -40,4 +54,3 @@ responses:
   utter_ask_rephrase:
   - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
   - text: "Could you please rephrase your message? I didn't quite get that."
-

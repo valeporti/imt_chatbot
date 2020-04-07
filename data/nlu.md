@@ -28,7 +28,7 @@
 - does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
 - what is the [link](attribute:link) of [U Express](object_type:supermarkets)?
 - what [address](attribute:address) do [they](mention) have?
-- can you tell me the [link](attribute:link) of [that supermarket](mention)?
+- can you tell me the [link](attribute:link) of [that](mention) one?
 - what [hospitals](object_type:hospitals) can you recommend?
 - list some [hospitals](object_type:hospitals)
 - can you name some [hospitals](object_type:hospitals) please?

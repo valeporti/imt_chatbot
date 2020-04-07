@@ -30,7 +30,6 @@
 from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
 from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
 
-
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
         # load knowledge base with data from the given file
