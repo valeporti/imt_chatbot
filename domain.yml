@@ -1,5 +1,4 @@
 intents:
-
   - bot_challenge
   - query_knowledge_base
   - recommendation
@@ -13,31 +12,41 @@ intents:
   - deny
   - goodbye
   - affirm
+  - rec_do_sport
+  - rec_watch_videos
 
 entities:
   - object_type
   - mention
   - attribute
+  - knowledge_base_objects
+  - knowledge_base_last_object
+  - knowledge_base_last_object_type
+  - supermarkets
+  - hospitals
+  - clinics
+  - pharmacies
 
 slots:
+  knowledge_base_objects:
+    type: unfeaturized
+  knowledge_base_last_object:
+    type: unfeaturized
+  knowledge_base_last_object_type:
+    type: unfeaturized
   object_type:
     type: unfeaturized
   mention:
     type: unfeaturized
   attribute:
     type: unfeaturized
-
-entities:
-  - object_type
-  - mention
-  - attribute
-
-slots:
-  object_type:
+  supermarkets:
     type: unfeaturized
-  mention:
+  hospitals:
     type: unfeaturized
-  attribute:
+  clinics:
+    type: unfeaturized
+  pharmacies:
     type: unfeaturized
 
 actions:
@@ -67,3 +76,19 @@ responses:
   utter_ask_rephrase:
   - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
   - text: "Could you please rephrase your message? I didn't quite get that."
+
+  utter_recommendation:
+  - text: "you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-livres-a-telecharger-gratuitement-pendant-la-periode-de-confinement/#gs.36qv1e"
+
+  utter_chose_something_else:
+  - text: "maybe you can choose any of our options"
+    buttons:
+    - title: "sport"
+      payload: "/rec_do_sport"
+    - title: "videos"
+      payload: "/rec_watch_videos"
+
+  utter_rec_do_sport:
+  - text: "Here an idea: https://youtu.be/5nZ6yoC0vdg"
+  utter_rec_watch_videos:
+  - text: "Here an idea: https://youtu.be/OOWAUAWy7rs"

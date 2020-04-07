@@ -34,5 +34,4 @@ class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
         # load knowledge base with data from the given file
         knowledge_base = InMemoryKnowledgeBase("./data/kb_data.json")
-
         super().__init__(knowledge_base)
