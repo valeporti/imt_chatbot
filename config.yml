@@ -11,7 +11,9 @@ language: en
 # the ConveRTFeaturizer is that it doesn’t treat each word of the user message independently, but creates a 
 # contextual vector representation for the complete sentence. However, ConveRT is only available in English.
 
-pipeline: supervised_embeddings
+# pretrained_embeddings_spacy
+# supervised_embeddings
+pipeline: pretrained_embeddings_spacy
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

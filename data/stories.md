@@ -4,6 +4,18 @@
 * what_else
   - utter_chose_something_else
 
+## Catch watch videos and ask for more denying
+* rec_watch_videos
+  - utter_rec_watch_videos
+* deny
+  - utter_chose_something_else
+
+## Catch do Sport and ask for more denying
+* rec_do_sport
+  - utter_rec_do_sport
+* deny
+  - utter_chose_something_else
+
 ## Catch do Sport and ask for more
 * rec_do_sport
   - utter_rec_do_sport
