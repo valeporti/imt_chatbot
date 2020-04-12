@@ -19,21 +19,14 @@ entities:
   - object_type
   - mention
   - attribute
-  - knowledge_base_objects
-  - knowledge_base_last_object
-  - knowledge_base_last_object_type
   - supermarkets
   - hospitals
   - clinics
   - pharmacies
+  - city
+  - livraison_domicile
 
 slots:
-  knowledge_base_objects:
-    type: unfeaturized
-  knowledge_base_last_object:
-    type: unfeaturized
-  knowledge_base_last_object_type:
-    type: unfeaturized
   object_type:
     type: unfeaturized
   mention:
@@ -47,6 +40,10 @@ slots:
   clinics:
     type: unfeaturized
   pharmacies:
+    type: unfeaturized
+  city:
+    type: unfeaturized
+  livraison_domicile:
     type: unfeaturized
 
 actions:

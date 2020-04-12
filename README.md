@@ -59,4 +59,22 @@ you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-l
 + **Available information**
   + Get the list of (supermarkets/hospitals/medics/pharmacies)
   + Get some info about one of the listed items (most of them have: name/postal_code/address/link, others: express/home_delivery
-    + For 
+    + For exemple:  
+```
+Your input ->  are there any supermarkets in Plouzané?     
+Found the following objects of type 'supermarkets':
+1: Lidl Plouzané
+2: Carrefour Plouzané
+Your input ->  which is the link for the first one?          
+'Lidl Plouzané' has the value 'https://www.lidl.fr/fr/' for attribute 'link'.
+Your input ->  which is its address?
+'Lidl Plouzané' has the value 'Route de Tremaidic' for attribute 'address'.
+Your input ->  which are the hospitals located in Plouzané
+I could not find any objects of type 'hospitals'.
+Your input ->  which are the hospitals in Brest 
+Found the following objects of type 'hospitals':
+1: CHRU Morvan
+2: CHRU Cavale Blanche
+can you give me the phone of the second one?
+'CHRU Morvan' has the value '02 98 22 33 33' for attribute 'phone'.
+```

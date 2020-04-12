@@ -7,10 +7,15 @@
 ## intent:query_knowledge_base
 - I would kike the list of [supermarkets](object_type:supermarkets) please.
 - what [supermarkets](object_type:supermarkets) can you recommend?
+- are there any [supermarkets](object_type:supermarkets) in [Plouzané](city)?
+- which are the [supermarkets](object_type:supermarkets) located in [Plouzané](city)?
 - do you have a [supermarkets](object_type:supermarkets) list? 
 - list some [supermarkets](object_type:supermarkets)
 - can you name some [supermarkets](object_type:supermarkets) please?
 - can you show me some [supermarkets](object_type:supermarkets) options
+- list [home delivery](livraison_domicile) [supermarkets](object_type:supermarkets)
+- which [supermarkets](object_type:supermarkets) have [home delivery](livraison_domicile)?
+- show me the [supermarkets](object_type:supermarkets) with [home delivery](livraison_domicile)
 - list [supermarkets](object_type:supermarkets)
 - do you have any [supermarkets](object_type:supermarkets)?
 - do you know the [address](attribute:address) of [that one](mention)?
@@ -39,6 +44,8 @@
 - can you name some [hospitals](object_type:hospitals) please?
 - can you show me some [hospitals](object_type:hospitals) options
 - list [hospitals](object_type:hospitals)
+- are there any [hospitals](object_type:hospitals) in [Plouzané](city)?
+- which are the [hospitals](object_type:hospitals) located in [Plouzané](city)?
 - do you have any [hospitals](object_type:hospitals)?
 - do you know the [localisation](attribute:localisation) of [that one](mention)?
 - do you know the [address](attribute:address) of the [second one](mention:2)?
@@ -50,6 +57,8 @@
 - what [medics](object_type:medics) do you know?
 - name some [medics](object_type:medics)
 - show me some [medics](object_type:medics)
+- are there any [medics](object_type:medics) in [Plouzané](city)?
+- which are the [medics](object_type:medics) located in [Plouzané](city)?
 - do you have the [phone](attribute:phone) of the [last one](mention:LAST)?
 - what is the [address](attribute:address) of the [second](mention:2)?
 - what is the [phone](attribute:phone) of the [third](mention:2)?
@@ -61,6 +70,8 @@
 - can you show me some [pharmacies](object_type:pharmacies) options
 - list [pharmacies](object_type:pharmacies)
 - do you have any [pharmacies](object_type:pharmacies)?
+- are there any [pharmacies](object_type:pharmacies) in [Plouzané](city)?
+- which are the [pharmacies](object_type:pharmacies) located in [Plouzané](city)?
 
 ## intent:recommendation
 - Any good recommendation?
