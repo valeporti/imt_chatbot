@@ -1,112 +1,114 @@
-## Asking for recommendation to spend time
-* recommendation
-  - utter_recommendation
-* what_else
-  - utter_chose_something_else
-
-## Catch do Sport and ask for more
-* rec_do_sport
-  - utter_rec_do_sport
-* thanks
-  - utter_goodbye
-
-## Catch watch videos and ask for more
-* rec_watch_videos
-  - utter_rec_watch_videos
-* what_else
-  - utter_chose_something_else
-
-<<<<<<< HEAD
-## query knowledgebase
-> check_knowledgebase
-=======
-## Catch do Sport and leave
-* rec_do_sport
-  - utter_rec_do_sport
-* what_else
-  - utter_chose_something_else
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
-
-## Catch watch videos and leave
-* rec_watch_videos
-  - utter_rec_watch_videos
-* thanks
-  - utter_goodbye
-
-## Catch do Sport (recommandation)
-* rec_do_sport
-  - utter_rec_do_sport
-
-## Catch watch videos (recommandation)
-* rec_watch_videos
-  - utter_rec_watch_videos
-
-## query knowledgebase once
+## happy path
+* greet OR nicetomeetyou
+  - utter_greet
+  - utter_nicetomeetyou
+* mood_great
+  - utter_happy
+> checkpoint_greet
+## sad path 
 * greet
   - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* affirm OR deny
+  - utter_happy
+  - utter_cheer_up
+> checkpoint_sad
+
+
+## Asking for recommendation to spend time video
+* recommendation{"domain": "video"}
+  - utter_rec_watch_videos
+* what_else OR thanks
+  - utter_chose_something_else
+  - utter_goodbye
+> checkpoint_recommendation_video
+
+
+## Asking for recommendation to spend time sport
+* recommendation{"domain": "sport"}
+  - utter_rec_do_sport
+* what_else OR thanks
+  - utter_chose_something_else
+  - utter_goodbye
+> checkpoint_recommendation_sport
+
+## Asking for recommendation to spend time music
+* recommendation{"domain": "music"}
+  - utter_rec_do_music
+* what_else OR thanks
+  - utter_chose_something_else
+  - utter_goodbye
+> checkpoint_recommendation_music  
+ 
+ 
+## Asking for recommendation to spend time recipe
+* recommendation{"domain": "recipe"}
+  - utter_rec_do_recipe
+* what_else OR thanks
+  - utter_chose_something_else
+  - utter_goodbye
+> checkpoint_recommendation_recipe 
+
+
+## Handle spontaneous unhappiness
+* mood_unhappy
+  - utter_cheer_up
+  
+## feel sad and ask for recommendation sport
+> checkpoint_sad
+> checkpoint_recommendation_sport
+  
+## feel sad and ask for recommendation video
+> checkpoint_sad
+> checkpoint_recommendation_video
+
+## feel sad and ask for recommendation music
+> checkpoint_sad
+> checkpoint_recommendation_music
+
+## feel sad and ask for recommendation recipe
+> checkpoint_sad
+> checkpoint_recommendation_recipe
+
+## greet and ask for recommendation sport
+> checkpoint_greet
+> checkpoint_recommendation_sport
+
+## greet and ask for recommendation video
+> checkpoint_greet
+> checkpoint_recommendation_video
+
+## greet and ask for recommendation music
+> checkpoint_greet
+> checkpoint_recommendation_music
+
+## greet and ask for recommendation recipe
+> checkpoint_greet
+> checkpoint_recommendation_recipe
+
+
+
+## Handle spontaneous KB query
+* query_knowledge_base
+  - action_query_knowledge_base
+  
+## query knowledgebase once
+> checkpoint_greet
 * query_knowledge_base
   - action_query_knowledge_base
 * thanks
   - utter_goodbye
 
 ## query knowledgebase twice
-* greet
-  - utter_greet
+> checkpoint_greet
 * query_knowledge_base
   - action_query_knowledge_base
 * query_knowledge_base
   - action_query_knowledge_base
 * thanks
   - utter_goodbye
-
-## Handle spontaneous KB query
-* query_knowledge_base
-  - action_query_knowledge_base
-
-## Handle spontaneous unhappiness
-* mood_unhappy
-  - utter_cheer_up
-
-<<<<<<< HEAD
-## happy path             
-* greet
-  - utter_greet
-* user_mood_great      
-  - utter_happy
-* goodbey
-  - utter_goodbey
-
-
-## sad path               
-* greet
-  - utter_greet            
-* user_mood_unhappy
-=======
-## happy path
-* greet
-  - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_recommendation
-  - utter_goodbey
 
 ## say goodbye
 * goodbye
@@ -114,10 +116,17 @@
 
 ## bot challenge
 * bot_challenge
-<<<<<<< HEAD
   - utter_iamabot
-  - utter_greet
-  - utter_how_do_you_feel
-=======
-  - utter_iamabot
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
+  
+
+## Asking for a joke
+* telljoke
+  = utter_telljoke
+
+## Greet, Asking for a joke
+> checkpoint_greet
+* telljoke
+  = utter_telljoke
+* what_else OR thanks
+  - utter_chose_something_else
+  - utter_goodbye

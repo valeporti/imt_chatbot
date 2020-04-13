@@ -3,25 +3,33 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+- can you think?
+- can you sing?
+- Do you know me?
+- Who are you?
+- Why are you here?
+
 
 ## intent:query_knowledge_base
+- I would kike the list of [supermarkets](object_type:supermarkets) please.
 - what [supermarkets](object_type:supermarkets) can you recommend?
+- do you have a [supermarkets](object_type:supermarkets) list? 
 - list some [supermarkets](object_type:supermarkets)
 - can you name some [supermarkets](object_type:supermarkets) please?
 - can you show me some [supermarkets](object_type:supermarkets) options
 - list [supermarkets](object_type:supermarkets)
 - do you have any [supermarkets](object_type:supermarkets)?
 - do you know the [address](attribute:address) of [that one](mention)?
-- do you have [their](mention) [address](attribute:address)
+- do you have [its](mention) [address](attribute:address)
 - what is the [address](attribute:address) of [U Express](object_type:supermarkets)
-- what is [their](mention) [address](attribute:address)
+- what is [its](mention) [address](attribute:address)
 - may i have the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
-- whats [their](mention) [address](attribute:address)
-- do you have [their](mention) [address](attribute:address)
-- give me [their](mention) [address](attribute:address)
-- what is [their](mention) [address](attribute:address)
-- give me [their](mention) [address](attribute:address)
-- can i have [their](mention) [address](attribute:address)
+- whats [its](mention) [address](attribute:address)
+- do you have [its](mention) [address](attribute:address)
+- give me [its](mention) [address](attribute:address)
+- what is [its](mention) [address](attribute:address)
+- give me [its](mention) [address](attribute:address)
+- can i have [its](mention) [address](attribute:address)
 - what is the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
 - what [city](attribute:city) is [it](mention) in?
 - do you know [city](attribute:city) of the [last one](mention:LAST)?
@@ -29,8 +37,11 @@
 - what is the [link](attribute:link) of [U Express](object_type:supermarkets)?
 - what [address](attribute:address) do [they](mention) have?
 - can you tell me the [link](attribute:link) of [that](mention) one?
+- which is [its](mention) [link](attribute)?
 - what [hospitals](object_type:hospitals) can you recommend?
 - list some [hospitals](object_type:hospitals)
+- which is the [phone](attribute) of [it](mention)?
+- does [it](mention) has a [phone number](attribute:phone)?
 - can you name some [hospitals](object_type:hospitals) please?
 - can you show me some [hospitals](object_type:hospitals) options
 - list [hospitals](object_type:hospitals)
@@ -45,11 +56,11 @@
 - what [medics](object_type:medics) do you know?
 - name some [medics](object_type:medics)
 - show me some [medics](object_type:medics)
-- do you have the [phone](attribute:phone) of the [last](mention:LAST) one?
+- do you have the [phone](attribute:phone) of the [last one](mention:LAST)?
 - what is the [address](attribute:address) of the [second](mention:2)?
 - what is the [phone](attribute:phone) of the [third](mention:2)?
-- does the [first](mention:1) one has [home service](attribute:livraison_domicile)?
-- is the [third](mention:3) one [express](attribute:express)?
+- does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
+- is the [third one](mention:3) [express](attribute:express)?
 - what [pharmacies](object_type:pharmacies) can you recommend?
 - list some [pharmacies](object_type:pharmacies)
 - can you name some [pharmacies](object_type:pharmacies) please?
@@ -82,6 +93,19 @@
 - help me find activities
 - show me what can I do
 - tell me what to do
+- I would like do some sport, but I dont know what to do.
+- jesus, give me something to do
+- Are you bored? 
+- What you usually do during the confinement?
+- What I can do to spent the time?
+- I want some fun.
+- I want to listen to the music.
+- I want to cook, but dont know waht to do.
+- I want some funny video.
+- I would like to see a film.
+- I would like to see a movie.
+- some fun, please.
+- Are you happy to be in the chatbot world?
 
 ## intent:what_else
 - what can you do?
@@ -108,6 +132,12 @@
 - something different to try?
 - may I try something else
 - might I try something different?
+- other choice?
+- other recommendation.
+- what next.
+- Hum...
+- More.
+
 
 ## intent:nicetomeetyou
 - Delighted to make your acquaintance.
@@ -661,7 +691,7 @@
 - i want that
 - i will!
 - it is ok
-- its okay
+- it's okay
 - ja
 - ja cool
 - ja thats great
@@ -802,14 +832,12 @@
 - CHRU Cavale Blanche
 - CHRU Morvan
 
-## synonym:their
--its
-
 ## synonym:link
 - web page
 - site
 - url
 - website
+- link address
 
 ## synonym:supermarkets
 - supermarket

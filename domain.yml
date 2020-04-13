@@ -9,30 +9,13 @@ intents:
   - mood_great
   - mood_unhappy
   - greet
-<<<<<<< HEAD
-  - query_knowledge_base
-  - get_current_situation
-  - recommendation
-  - user_mood_great
-  - user_mood_unhappy
-  - thanks
-  - affirm
-  - goodbye
-  - Tell_jokes
-  - deny
-<<<<<<< HEAD
-  -
-=======
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-=======
   - deny
   - goodbye
   - affirm
   - rec_do_sport
   - rec_watch_videos
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
+  - rec_listen_music
+  - rec_do_cuisine
 
 entities:
   - object_type
@@ -47,6 +30,14 @@ entities:
   - pharmacies
 
 slots:
+  recommendation:
+    tpye: categorical
+    values:
+      - video
+      - sport
+      - music
+      - recipe
+
   knowledge_base_objects:
     type: unfeaturized
   knowledge_base_last_object:
@@ -68,67 +59,108 @@ slots:
   pharmacies:
     type: unfeaturized
 
->>>>>>> 30695f9334a2314a44f29e21c0fad37908a92e9d
 actions:
-- action_query_knowledge_base
-<<<<<<< HEAD
 - utter_greet
+- utter_happy
+- utter_nicetomeetyou
 - utter_cheer_up
 - utter_did_that_help
-- utter_happy
+- utter_rec_watch_videos
+- utter_rec_do_sport
+- utter_rec_do_music
+- utter_rec_do_recipe
+- utter_chose_something_else
 - utter_goodbye
+- action_query_knowledge_base
 - utter_iamabot
+- utter_telljoke
 - utter_ask_rephrase
-- utter_other_question
-- utter_recommendation
-- utter_how_do_you_feel
-- Utter_happy
-- utter_tell_jokes
-- Utter_you_are_welcome
-
-template:
-=======
-
 responses:
 
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
   utter_greet:
   - text: "Hey! How are you?"
   - text: "How do you do?"
   - text: "How are you going"
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "'there there, All is well"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-  - text: "Is it useful?"
 
   utter_happy:
   - text: "Great, carry on!"
-  - text: "Tell me more."
+  - text: 'I am proud of you, sweety.'
+  - text: 'Move on'
+  utter_nicetomeetyou:
+    - text: "I'm pleased to meet you!"
+    - text: " Nice to have met you."
+    - text: "Hi, glad to meet you."
+    - text: "Feels great to see you!"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Here is something to cheer you up:"
+    video: "https://www.youtube.com/watch?v=AcxSEhMG-3Q"
+  - text: "'there there, All is well"
+    music: "https://www.youtube.com/watch?v=miomuSGoPzI"
+  - text: "The sky is everywhere, it begins at your feet."
+  - text: "I’ve got nothing to do today but smile."
+  - text: "Cheer up, my dear. After every storm comes the sun. Happiness is waiting for you ahead."
+  - text: "go to check the mirror, what a beautiful guy is, smile"
+  - text: "You are awesome! Never forget that."
+  - text: "check some funny video."
+    video: "https://youtu.be/iSazmMvoD5w"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Do you need me more?"
+  - text: "Do you feel better?"
+  - text: "Does it work to you?"
+  - text: "Any other question?"
 
-  utter_ask_rephrase:
-  - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
-  - text: "Could you please rephrase your message? I didn't quite get that."
+  utter_rec_do_sport:
+  - text: "Here an idea: https://youtu.be/5nZ6yoC0vdg"
+  - text: "Maybe some yoga, https://www.youtube.com/watch?v=h5CEOjPY_uw"
+  - text: "Maybe some pingpong,https://www.youtube.com/watch?v=Nj8XNBZZsxY"
+  - text: "body building, https://www.youtube.com/watch?v=UBMk30rjy0o"
+  - text: "burning fat, 30 mins hit. https://www.youtube.com/watch?v=ml6cT4AZdqI"
+  - text: "zumba class, https://www.youtube.com/watch?v=cLJfmPaKb1M"
+  - text: "dance with your partner,https://www.youtube.com/watch?v=aVtWSZOttC0"
+  - text: "boxing,https://www.youtube.com/watch?v=jCTEVKRTuS8"
 
-<<<<<<< HEAD
-Utter_you_are_welcome:
-  - text: "you are welcome."
-  - text: "it is my great honor."
-  - text: "You got it."
-  - text: "Not a problem."
-  - text: "I'm happy to help."
-=======
-  utter_recommendation:
-  - text: "you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-livres-a-telecharger-gratuitement-pendant-la-periode-de-confinement/#gs.36qv1e"
+  utter_rec_watch_videos:
+  - text: "Here an idea: https://youtu.be/OOWAUAWy7rs"
+  - text: "funny video, not to laugh challenge, https://www.youtube.com/watch?v=EFlAbO9TQ6M "
+  - text: "series: la casa de papel"
+  - text: "moive: Miracle in Cell No. 7, my Sassy Girl, The Godfather "
+  - text: "https://www.youtube.com/watch?v=LIlZCmETvsY"
+  - text: "https://www.youtube.com/watch?v=A5ZESL5Z3zg"
+  - text: "https://www.youtube.com/watch?v=nBHkIWAJitg"
+  - text: "https://www.youtube.com/watch?v=FFLTU9eIijw"
+  - text: "ski at home, https://www.youtube.com/watch?v=_HrIVWziJ0Y"
+  - text: "https://www.youtube.com/watch?v=EMVPpPE_Bx4"
+
+  utter_rec_do_music:
+    - text: "https://www.youtube.com/watch?v=2JB_nG_KMCs"
+    - text: "https://www.youtube.com/watch?v=oaChrG7U6ww"
+    - text: "https://www.youtube.com/watch?v=u5CVsCnxyXg"
+    - text: "https://www.youtube.com/watch?v=PVjiKRfKpPI"
+    - text: "https://www.youtube.com/watch?v=8SbUC-UaAxE"
+    - text: "https://www.youtube.com/watch?v=Rbm6GXllBiw"
+    - text: "https://www.youtube.com/watch?v=d-diB65scQU"
+    - text: "https://www.youtube.com/watch?v=spCdFMnQ1Fk"
+    - text: "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+    - text: "https://www.youtube.com/watch?v=KXw8CRapg7k"
+    - text: "https://www.youtube.com/watch?v=XQKYEs4llzg"
+
+  utter_rec_do_recipe:
+    - text: "https://www.bbcgoodfood.com/recipes/summer-couscous-salad"
+    - text: "https://www.bbcgoodfood.com/recipes/chinese-dumplings"
+    - text: "chiken, https://www.youtube.com/watch?v=QUJz0mYS6Ow"
+    - text: "https://www.youtube.com/watch?v=1-2QBYKI8LU"
+    - text: "https://www.youtube.com/watch?v=2zXv_ZY6GzU"
+    - text: "vegetables, https://www.youtube.com/watch?v=a-Yu8qOAEYQ"
+    - text: "korean, https://www.youtube.com/watch?v=HuzOYHe3s0Y&t=55s"
+    - text: "korean, https://www.youtube.com/watch?v=38ZyFsjKWpQ"
+    - text: "ramen, https://www.youtube.com/watch?v=B8y3SSmz4sg"
+    - text: "sushi, https://www.youtube.com/watch?v=9QUpTeTVPJo"
+
 
   utter_chose_something_else:
   - text: "maybe you can choose any of our options"
@@ -138,8 +170,30 @@ Utter_you_are_welcome:
     - title: "videos"
       payload: "/rec_watch_videos"
 
-  utter_rec_do_sport:
-  - text: "Here an idea: https://youtu.be/5nZ6yoC0vdg"
-  utter_rec_watch_videos:
-  - text: "Here an idea: https://youtu.be/OOWAUAWy7rs"
->>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "See you."
+  - text: "see you tomorrow."
+  - text: "Hope see you soon"
+
+action_query_knowledge_base:
+
+
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  - text: "I thought that you will ask me this question. To be honest, I am a robot, but a intelligent robot."
+  - text: "Yep, My name is RARA, your private bot. we could be friends"
+  - text: "Since I cant eat, and made by metal. So, I think I am a bot."
+  - text: "Yep, bro, is it the first time that you talk with a bot?"
+  - text: "Maybe I an angle to help you, to accompany you. "
+
+utter_telljoke:
+
+  utter_ask_rephrase:
+  - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
+  - text: "Could you please rephrase your message? I didn't quite get that."
+
+
+
