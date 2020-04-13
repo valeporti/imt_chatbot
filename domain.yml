@@ -31,7 +31,7 @@ entities:
 
 slots:
   recommendation:
-    tpye: categorical
+    type: categorical
     values:
       - video
       - sport
