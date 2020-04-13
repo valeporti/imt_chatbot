@@ -1,41 +1,73 @@
+## Asking for recommendation to spend time
+* recommendation
+  - utter_recommendation
+* what_else
+  - utter_chose_something_else
 
-## query knowledgebase 
-* Greet   # intention
-  - utter_greet # actions
-* Query_Knowledgebase
-  -  utter_Get_Supermarket
-  -  utter_Get_Hospital
-  -  utter_Get_Trips
-  -  utter_Get_pharmacies
- * Grateful_words
-  - utter_thanks
-  - utter_other_questions
-> check_knowledgebase
+## Catch do Sport and ask for more
+* rec_do_sport
+  - utter_rec_do_sport
+* thanks
+  - utter_goodbye
 
-## asking for recommendation to spend time
-* Kill_Time_Intent{"is_helpful": "YES"}  # how to set a slot
-  - utter_ recommendation
-  - utter_did_that_help 
-> check_recommendation
+## Catch watch videos and ask for more
+* rec_watch_videos
+  - utter_rec_watch_videos
+* what_else
+  - utter_chose_something_else
 
+<<<<<<< HEAD
 ## query knowledgebase
 > check_knowledgebase
+=======
+## Catch do Sport and leave
+* rec_do_sport
+  - utter_rec_do_sport
+* what_else
+  - utter_chose_something_else
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
 
-* More_question
-  - utter_waiting_for_question
-* User_Sentiments_bad_Intent OR User_Sentiments_great_Intent
-  - utter_cheer_up
-* Kill_Time_Intent{"is_helpful": "YES"}  # how to set a slot
-  - utter_ recommendation
-  - utter_did_that_help
-** affirm
-  - utter_happy
-  - utter_goodbey
+## Catch watch videos and leave
+* rec_watch_videos
+  - utter_rec_watch_videos
+* thanks
+  - utter_goodbye
+
+## Catch do Sport (recommandation)
+* rec_do_sport
+  - utter_rec_do_sport
+
+## Catch watch videos (recommandation)
+* rec_watch_videos
+  - utter_rec_watch_videos
+
+## query knowledgebase once
+* greet
+  - utter_greet
+* query_knowledge_base
+  - action_query_knowledge_base
+* thanks
+  - utter_goodbye
+
+## query knowledgebase twice
+* greet
+  - utter_greet
+* query_knowledge_base
+  - action_query_knowledge_base
+* query_knowledge_base
+  - action_query_knowledge_base
+* thanks
+  - utter_goodbye
+
+## Handle spontaneous KB query
+* query_knowledge_base
+  - action_query_knowledge_base
 
 ## Handle spontaneous unhappiness
 * mood_unhappy
-  - utter_mood_unhappy
+  - utter_cheer_up
 
+<<<<<<< HEAD
 ## happy path             
 * greet
   - utter_greet
@@ -49,6 +81,18 @@
 * greet
   - utter_greet            
 * user_mood_unhappy
+=======
+## happy path
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
+
+## sad path 1
+* greet
+  - utter_greet
+* mood_unhappy
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
   - utter_cheer_up
   - utter_did_that_help
 * affirm
@@ -70,6 +114,10 @@
 
 ## bot challenge
 * bot_challenge
+<<<<<<< HEAD
   - utter_iamabot
   - utter_greet
   - utter_how_do_you_feel
+=======
+  - utter_iamabot
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9

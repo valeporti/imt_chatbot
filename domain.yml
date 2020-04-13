@@ -1,5 +1,15 @@
 intents:
+  - bot_challenge
+  - query_knowledge_base
+  - recommendation
+  - what_else
+  - nicetomeetyou
+  - thanks
+  - telljoke
+  - mood_great
+  - mood_unhappy
   - greet
+<<<<<<< HEAD
   - query_knowledge_base
   - get_current_situation
   - recommendation
@@ -16,23 +26,52 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+=======
+  - deny
+  - goodbye
+  - affirm
+  - rec_do_sport
+  - rec_watch_videos
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
 
 entities:
   - object_type
   - mention
   - attribute
+  - knowledge_base_objects
+  - knowledge_base_last_object
+  - knowledge_base_last_object_type
+  - supermarkets
+  - hospitals
+  - clinics
+  - pharmacies
 
 slots:
+  knowledge_base_objects:
+    type: unfeaturized
+  knowledge_base_last_object:
+    type: unfeaturized
+  knowledge_base_last_object_type:
+    type: unfeaturized
   object_type:
     type: unfeaturized
   mention:
     type: unfeaturized
   attribute:
     type: unfeaturized
+  supermarkets:
+    type: unfeaturized
+  hospitals:
+    type: unfeaturized
+  clinics:
+    type: unfeaturized
+  pharmacies:
+    type: unfeaturized
 
 >>>>>>> 30695f9334a2314a44f29e21c0fad37908a92e9d
 actions:
 - action_query_knowledge_base
+<<<<<<< HEAD
 - utter_greet
 - utter_cheer_up
 - utter_did_that_help
@@ -48,6 +87,11 @@ actions:
 - Utter_you_are_welcome
 
 template:
+=======
+
+responses:
+
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9
   utter_greet:
   - text: "Hey! How are you?"
   - text: "How do you do?"
@@ -75,9 +119,27 @@ template:
   - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
   - text: "Could you please rephrase your message? I didn't quite get that."
 
+<<<<<<< HEAD
 Utter_you_are_welcome:
   - text: "you are welcome."
   - text: "it is my great honor."
   - text: "You got it."
   - text: "Not a problem."
   - text: "I'm happy to help."
+=======
+  utter_recommendation:
+  - text: "you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-livres-a-telecharger-gratuitement-pendant-la-periode-de-confinement/#gs.36qv1e"
+
+  utter_chose_something_else:
+  - text: "maybe you can choose any of our options"
+    buttons:
+    - title: "sport"
+      payload: "/rec_do_sport"
+    - title: "videos"
+      payload: "/rec_watch_videos"
+
+  utter_rec_do_sport:
+  - text: "Here an idea: https://youtu.be/5nZ6yoC0vdg"
+  utter_rec_watch_videos:
+  - text: "Here an idea: https://youtu.be/OOWAUAWy7rs"
+>>>>>>> 60103a97045b5a14f47a1ce0ffa852429ca19ff9

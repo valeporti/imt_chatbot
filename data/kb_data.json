@@ -89,7 +89,7 @@
       "localisation" : "https://www.google.com/maps/place/Centre+Hospitalier+R%C3%A9gional+Universitaire+Morvan+de+Brest/@48.3937017,-4.4895564,16.67z/data=!4m8!1m2!2m1!1shopital!3m4!1s0x0:0x467d739fa8b94169!8m2!3d48.3922721!4d-4.4872284"
     }
   ],
-  "clinics": [
+  "medics": [
     {
       "id": 0,
       "name": "Memain Jean-Philippe",
