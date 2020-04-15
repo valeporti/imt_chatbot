@@ -20,6 +20,10 @@ pip(3) install rasa==1.7.4
 ```
 git clone https://github.com/valeporti/imt_chatbot.git
 ```
+> *next instruction is to train the chatbot, but, if needed, the already trained model could be downloaded*
+1. *download from [drive](https://drive.google.com/file/d/1yrBBqyFYrUyHH0sqRKkI9O5RVoyQ0sCg/view?usp=sharing)*
+2. put inside model's folder *imt_chatbot/models/*
+
 > Train the chatbot
 ```
 cd imt_chatbot
@@ -50,7 +54,42 @@ Your input ->  recommend me something to do
 you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-livres-a-telecharger-gratuitement-pendant-la-periode-de-confinement/#gs.36qv1e
 ```
 
+> Rasa x
+
+* This makes easier the process of visualization, training and correction of the behavior of the bot. 
+
+To install it alongside rasa preconfigured for spacy:
+```
+pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+pip install rasa[spacy]
+python3 -m spacy download em_core_web_md
+python3 -m spacy link en_core_web_md en
+```
+
+To run it:
+```
+rasa x
+```
+
 # Subjects handled by our chatbot
+
+### Options handled by this chatbot
+
+```
+Your input ->  What can you do?                                                 
+You can ask me about:
+- How I was built.
+- How old I am.
+- What time is it.
+- The weather. 
+- We can disscuss about how do you feel.
+- I can give you some recommendations for activities to do. 
+- I have information about supermarkets, pharmacies, medics and hospitals in the zone.
+- I know some jokes too XD.
+Your input ->  Great                                                            
+I know, rigth?
+Your input ->   
+```
 
 ### Could show supermarkets, hospitals, medics, pharmacies 
 *Just in Plouzané, Finistère, France*
@@ -59,4 +98,22 @@ you could read a book :): https://outilstice.com/2020/03/la-liste-complete-des-l
 + **Available information**
   + Get the list of (supermarkets/hospitals/medics/pharmacies)
   + Get some info about one of the listed items (most of them have: name/postal_code/address/link, others: express/home_delivery
-    + For 
+    + For exemple:  
+```
+Your input ->  are there any supermarkets in Plouzané?     
+Found the following objects of type 'supermarkets':
+1: Lidl Plouzané
+2: Carrefour Plouzané
+Your input ->  which is the link for the first one?          
+'Lidl Plouzané' has the value 'https://www.lidl.fr/fr/' for attribute 'link'.
+Your input ->  which is its address?
+'Lidl Plouzané' has the value 'Route de Tremaidic' for attribute 'address'.
+Your input ->  which are the hospitals located in Plouzané
+I could not find any objects of type 'hospitals'.
+Your input ->  which are the hospitals in Brest 
+Found the following objects of type 'hospitals':
+1: CHRU Morvan
+2: CHRU Cavale Blanche
+can you give me the phone of the second one?
+'CHRU Morvan' has the value '02 98 22 33 33' for attribute 'phone'.
+```

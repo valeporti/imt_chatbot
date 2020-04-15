@@ -1,6 +1,5 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-
 language: en
 
 # The pipeline contains the ConveRTFeaturizer that provides pre-trained word embeddings of the user 
@@ -13,14 +12,13 @@ language: en
 
 # pretrained_embeddings_spacy
 # supervised_embeddings
-pipeline: pretrained_embeddings_spacy
+
+pipeline: supervised_embeddings
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
-
 policies:
   - name: MemoizationPolicy
-  - name: FallbackPolicy
   - name: EmbeddingPolicy
     max_history: 5
     epochs: 100
