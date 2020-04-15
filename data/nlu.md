@@ -5,73 +5,175 @@
 - am I talking to a human?
 
 ## intent:query_knowledge_base
-- I would kike the list of [supermarkets](object_type:supermarkets) please.
-- what [supermarkets](object_type:supermarkets) can you recommend?
-- are there any [supermarkets](object_type:supermarkets) in [Plouzané](city)?
-- which are the [supermarkets](object_type:supermarkets) located in [Plouzané](city)?
-- do you have a [supermarkets](object_type:supermarkets) list? 
-- list some [supermarkets](object_type:supermarkets)
-- can you name some [supermarkets](object_type:supermarkets) please?
-- can you show me some [supermarkets](object_type:supermarkets) options
-- list [home delivery](livraison_domicile) [supermarkets](object_type:supermarkets)
-- which [supermarkets](object_type:supermarkets) have [home delivery](livraison_domicile)?
-- show me the [supermarkets](object_type:supermarkets) with [home delivery](livraison_domicile)
-- list [supermarkets](object_type:supermarkets)
-- do you have any [supermarkets](object_type:supermarkets)?
-- do you know the [address](attribute:address) of [that one](mention)?
-- do you have [its](mention) [address](attribute:address)
-- what is the [address](attribute:address) of [U Express](object_type:supermarkets)
-- what is [its](mention) [address](attribute:address)
-- may i have the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
-- whats [its](mention) [address](attribute:address)
-- do you have [its](mention) [address](attribute:address)
-- give me [its](mention) [address](attribute:address)
-- what is [its](mention) [address](attribute:address)
-- give me [its](mention) [address](attribute:address)
-- can i have [its](mention) [address](attribute:address)
-- what is the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
-- what [city](attribute:city) is [it](mention) in?
-- do you know [city](attribute:city) of the [last one](mention:LAST)?
-- does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
-- what is the [link](attribute:link) of [U Express](object_type:supermarkets)?
-- what [address](attribute:address) do [they](mention) have?
-- can you tell me the [link](attribute:link) of [that](mention) one?
+- I would kike the list of [supermarkets](object_type) please.
+- what [supermarkets](object_type) can you recommend?
+- are there any [supermarkets](object_type) in [Brest](city)?
+- which are the [supermarkets](object_type) located in [Plouzané](city)?
+- do you have a [supermarkets](object_type) list?
+- list some [supermarkets](object_type)
+- can you name some [supermarkets](object_type) please?
+- can you show me some [supermarkets](object_type) options
+- list [home delivery](livraison_domicile) [supermarkets](object_type)
+- are there any [supermarkets](object_type) with [home delivery](livraison_domicile)?
+- which [supermarkets](object_type) [bring the order to my house](livraison_domicile)?
+- which [supermarkets](object_type) have [home delivery](livraison_domicile)?
+- show me the [supermarkets](object_type) with [home delivery](livraison_domicile)
+- list [supermarkets](object_type)
+- do you have any [supermarkets](object_type)?
+- do you know the [address](attribute) of [that one](mention)?
+- do you have [its](mention) [address](attribute)
+- what is the [address](attribute) of [U Express](object_type:supermarkets)
+- what is [its](mention) [address](attribute)
+- may i have the [address](attribute) of the [supermarkets](object_type)
+- whats [its](mention) [address](attribute)
+- give me [its](mention) [address](attribute)
+- can i have [its](mention) [address](attribute)
+- what is the [address](attribute) of the [supermarkets](object_type)
+- what [city](attribute) is [it](mention) in?
+- do you know the [city](attribute) of the [last](mention:LAST) item?
+- does the [first one](mention:1) have [home service](attribute:livraison_domicile)?
+- what is the [link](attribute) of [U Express](object_type:supermarkets)?
+- can you give me the [phone](attribute) of the [number one](mention:1)?
+- do you know the [phone](attribute) of the [second one](mention:2)?
+- what [address](attribute) do [they](mention) have?
+- can you tell me the [link](attribute) of [that](mention) one?
 - which is [its](mention) [link](attribute)?
-- what [hospitals](object_type:hospitals) can you recommend?
-- list some [hospitals](object_type:hospitals)
+- what [hospitals](object_type) can you recommend?
+- list some [hospitals](object_type)
 - which is the [phone](attribute) of [it](mention)?
-- does [it](mention) has a [phone number](attribute:phone)?
-- can you name some [hospitals](object_type:hospitals) please?
-- can you show me some [hospitals](object_type:hospitals) options
-- list [hospitals](object_type:hospitals)
-- are there any [hospitals](object_type:hospitals) in [Plouzané](city)?
-- which are the [hospitals](object_type:hospitals) located in [Plouzané](city)?
-- do you have any [hospitals](object_type:hospitals)?
-- do you know the [localisation](attribute:localisation) of [that one](mention)?
-- do you know the [address](attribute:address) of the [second one](mention:2)?
-- do you have the [localisation](attribute:localisation) of [CHRU Morvan](object_type:hospitals)?
+- does [it](mention) have a [phone number](attribute:phone)?
+- can you name some [hospitals](object_type) please?
+- can you show me some [hospitals](object_type) options
+- list [hospitals](object_type)
+- are there any [hospitals](object_type) in [Plouzané](city)?
+- which are the [hospitals](object_type) located in [Brest](city)?
+- do you have any [hospitals](object_type)?
+- do you know the [localisation](attribute) of [that one](mention)?
+- do you know the [address](attribute) of the [number two](mention:2)?
+- do you have the [localisation](attribute) of [CHRU Morvan](object_type:hospitals)?
 - what is the [phone number](attribute:phone) of [CHRU Morvan](object_type:hospitals)?
-- can you tell me the [link](attribute:link) of [that one](mention)?
-- what [medics](object_type:medics) can you recommend?
-- please list some [medics](object_type:medics) for me
-- what [medics](object_type:medics) do you know?
-- name some [medics](object_type:medics)
-- show me some [medics](object_type:medics)
-- are there any [medics](object_type:medics) in [Plouzané](city)?
-- which are the [medics](object_type:medics) located in [Plouzané](city)?
-- do you have the [phone](attribute:phone) of the [last one](mention:LAST)?
-- what is the [address](attribute:address) of the [second](mention:2)?
-- what is the [phone](attribute:phone) of the [third](mention:2)?
-- does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
-- is the [third one](mention:3) [express](attribute:express)?
-- what [pharmacies](object_type:pharmacies) can you recommend?
-- list some [pharmacies](object_type:pharmacies)
-- can you name some [pharmacies](object_type:pharmacies) please?
-- can you show me some [pharmacies](object_type:pharmacies) options
-- list [pharmacies](object_type:pharmacies)
-- do you have any [pharmacies](object_type:pharmacies)?
-- are there any [pharmacies](object_type:pharmacies) in [Plouzané](city)?
-- which are the [pharmacies](object_type:pharmacies) located in [Plouzané](city)?
+- can you tell me the [link](attribute) of [that one](mention)?
+- what [medics](object_type) can you recommend?
+- please list some [medics](object_type) for me
+- what [medics](object_type) do you know?
+- name some [medics](object_type)
+- show me some [medics](object_type)
+- are there any [medics](object_type) in [Brest](city)?
+- which are the [medics](object_type) located in [Plouzané](city)?
+- do you have the [phone](attribute) of the [last one](mention:LAST)?
+- what is the [address](attribute) of the [second](mention:2)?
+- what is the [phone number](attribute:phone) of the [third](mention:3)?
+- is the [third one](mention:3) [express](attribute)?
+- what [pharmacies](object_type) can you recommend?
+- which is the [phone](attribute) of the [third one](mention:3)
+- does the [number one](mention:1) have a [phone number](attribute:phone)
+- list some [pharmacies](object_type)
+- can you name some [pharmacies](object_type) please?
+- can you show me some [pharmacies](object_type) options
+- list [pharmacies](object_type)
+- do you have any [pharmacies](object_type)?
+- are there any [pharmacies](object_type) in [Plouzané](city)?
+- which are the [pharmacies](object_type) located in [Brest](city)?
+- list me some [supermarkets](object_type) in [Plouzané](city)
+- which is the [address](attribute) of the [second one](mention:2)?
+- do you know the [localisation](attribute) of the [fourth one](mention:4)?
+- do you know the [postal code](attribute:postal_code) of the [fifth one](mention:5)?
+- give me the [postal code](attribute:postal_code) of the [number four](mention:4)
+- does the [number five](mention:5) has [home delivery](livraison_domicile)
+- does the [number three](mention:3) has a [link](attribute)
+- which is the [link](attribute) for the [number four](mention:4)?
+
+## intent:ask_howbuilt
+- How did they build you?
+- How were you constructed?
+- in what way were you made?
+- How did you come to be?
+- Can you explain how you were created?
+- By what means were you made?
+- Do you know how you were made?
+- What process was used to build you?
+- How did you come into being?
+- How were you made?
+
+## intent:ask_howdoing
+- What's up man
+- how's your day going
+- How are you?
+- are you having a good day
+- How's life treating you friend?
+- how are u
+- Do you feel good?
+- how are you feeling
+- how have you been
+- are you alright
+- How've you been?
+- Is everything ok?
+
+## intent:ask_howold
+- What is your age?
+- what year were you born?
+- when is your birthday?
+- what age are you
+- Tell me your birthday.
+- how old?
+- How old are you?
+
+## intent:ask_time
+- What is the time?
+- Hi, I need the time.
+- Can you tell me what time it is?
+- Give me the time.
+- What's the time right now?
+- what time it is
+- Time?
+- do you know the time?
+
+## intent:ask_weather
+- how is the weather?
+- Will the skies be clear today?
+- Is it humid out there today?
+- what's the weather like where you are?
+- what's the weather
+- Nice day out today?
+- is it sunny?
+- how's the weather?
+
+## intent:ask_whatspossible
+- so now what
+- um what now
+- hm that doesnt quite help me is there anything else you can do?
+- help please
+- what are you good at?
+- options
+- cool! can I do something else here?
+- what can you do?
+- what else can you do?
+- Can you do something else?
+- Is there other thing you can do?
+- something else
+- so
+- what now?
+- and
+- and...
+- and now what
+- which functions are included
+- Which are your functionalities
+- what now
+- can you give something else
+- is it all?
+- it's all?
+- that's all?
+- is that all?
+- can you help me in other way?
+- do you have more functions?
+- something different to try?
+- may I try something else
+- might I try something different?
+- other choice?
+- other recommendation.
+- what next
+- Hum...
+- More
 
 ## intent:recommendation
 - Any good recommendation?
@@ -98,32 +200,15 @@
 - help me find activities
 - show me what can I do
 - tell me what to do
-
-## intent:what_else
-- what can you do?
-- what else can you do?
-- Can you do something else?
-- Is there other thing you can do?
-- something else 
-- so
-- what now?
-- ...
-- and
-- and...
-- and now what
-- which functions are included
-- Which are your functionalities
-- what now
-- can you give something else
-- is it all?
-- it's all?
-- that's all?
-- is that all?
-- can you help me in other way?
-- do you have more functions?
-- something different to try?
-- may I try something else
-- might I try something different?
+- I dont know what to do.
+- jesus, give me something to do
+- What should I do during the confinement?
+- What can I do to spent the time?
+- I want some fun.
+- I want some funny recommendation.
+- some fun, please.
+- recommend me something else
+- another recommendation please
 
 ## intent:nicetomeetyou
 - Delighted to make your acquaintance.
@@ -285,6 +370,7 @@
 - funny
 - great
 - pretty cool :D
+- ok
 
 ## intent:mood_unhappy
 - I don't feel fine
@@ -299,6 +385,7 @@
 - I feel terrible
 - terrible
 - not very good
+- Not ok
 - I am not very good
 - extremely sad
 - so sad
@@ -319,7 +406,6 @@
 - i sad
 - i'm sad
 - sad
-- so sad
 - so sad :(
 - super sad
 - very very sad
@@ -386,7 +472,6 @@
 - hello is anybody there
 - hello it is me again
 - hello robot
-- hello sara
 - hello sweatheart
 - hello sweet boy
 - hello there
@@ -420,7 +505,6 @@
 - hi friend
 - hi friends
 - hi hi
-- hi mrs rasa
 - hi pal!
 - hi sara
 - hi there
@@ -479,14 +563,13 @@
 - i don't want to
 - i don't want to give you my email
 - i dont want to
-- i dont want to accept :P lol
+- i dont want to accept
 - i guess it means - no
 - i'm afraid not
 - i'm not sure
 - it is going pretty badly
 - it sucks
 - it sux
-- n
 - na
 - nah
 - nah I'm good
@@ -507,7 +590,7 @@
 - no i can't
 - no i don't accept
 - no i dont want to
-- no i dont want to accept :P lol
+- no i dont want to accept
 - no i won't
 - no ma'am
 - no sir
@@ -734,7 +817,8 @@
 - uh-huh
 - very much
 - well yes
-- y
+- why not
+- lol
 - ya
 - ya cool
 - ya go for it
@@ -818,17 +902,9 @@
 - CHRU Cavale Blanche
 - CHRU Morvan
 
-## synonym:link
-- web page
-- site
-- url
-- website
-- link address
-
-## synonym:supermarkets
-- supermarket
-- super
-- supers
+## lookup:city
+- Plouzané
+- Brest
 
 ## synonym:hospitals
 - hospital
@@ -836,11 +912,26 @@
 - medical institution
 - health service
 - CHRU
+- CHU
+
+## synonym:link
+- web page
+- site
+- url
+- website
+- link address
 
 ## synonym:medics
+- clinics
+- clinic
 - medic
 - doctor
 - doctors
 
 ## synonym:pharmacies
 - pharmacie
+
+## synonym:supermarkets
+- supermarket
+- super
+- supers
