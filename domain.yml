@@ -26,29 +26,14 @@ entities:
   - object_type
   - mention
   - attribute
-  - knowledge_base_objects
-  - knowledge_base_last_object
-  - knowledge_base_last_object_type
   - supermarkets
   - hospitals
   - medics
   - pharmacies
+  - city
+  - livraison_domicile
 
 slots:
-  recommendation:
-    type: categorical
-    values:
-      - video
-      - sport
-      - music
-      - recipe
-
-  knowledge_base_objects:
-    type: unfeaturized
-  knowledge_base_last_object:
-    type: unfeaturized
-  knowledge_base_last_object_type:
-    type: unfeaturized
   object_type:
     type: unfeaturized
   mention:
@@ -63,23 +48,14 @@ slots:
     type: unfeaturized
   pharmacies:
     type: unfeaturized
+  city:
+    type: unfeaturized
+  livraison_domicile:
+    type: unfeaturized
 
 actions:
-- utter_greet
-- utter_happy
-- utter_nicetomeetyou
-- utter_cheer_up
-- utter_did_that_help
-- utter_rec_watch_videos
-- utter_rec_do_sport
-- utter_rec_do_music
-- utter_rec_do_recipe
-- utter_chose_something_else
-- utter_goodbye
 - action_query_knowledge_base
-- utter_iamabot
-- utter_telljoke
-- utter_ask_rephrase
+
 responses:
 
   utter_iamabot:
@@ -202,9 +178,9 @@ responses:
   \n- Summer couscous salad: https://www.bbcgoodfood.com/recipes/summer-couscous-salad
   \n- Chinese dumplings: https://www.bbcgoodfood.com/recipes/chinese-dumplings
   \n- Chinese Pork Belly: https://youtu.be/2zXv_ZY6GzU
-  \n- Vegetables: Basic Flavors and Recipes: https://youtu.be/a-Yu8qOAEYQ
+  \n- Vegetables - Basic Flavors and Recipes: https://youtu.be/a-Yu8qOAEYQ
   \n- Ramen: https://youtu.be/B8y3SSmz4sg
-  \n- Sushi: https://youtu.be/9QUpTeTVPJo"
+  \n- Sushi, https://youtu.be/9QUpTeTVPJo"
 
   utter_ask_howbuilt:
   - text: "I was built with a lot of love and patience."
