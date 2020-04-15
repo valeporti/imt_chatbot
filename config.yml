@@ -1,38 +1,13 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-
 language: en
-
-# The pipeline contains the ConveRTFeaturizer that provides pre-trained word embeddings of the user 
-# utterance. Pre-trained word embeddings are helpful as they already encode some kind of linguistic 
-# knowledge. For example, if you have a sentence like “I want to buy apples” in your training data, and 
-# Rasa is asked to predict the intent for “get pears”, your model already knows that the words “apples” and 
-# “pears” are very similar. This is especially useful if you don’t have enough training data. The advantage of 
-# the ConveRTFeaturizer is that it doesn’t treat each word of the user message independently, but creates a 
-# contextual vector representation for the complete sentence. However, ConveRT is only available in English.
-
-pipeline:
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: "char_wb"
-    min_ngram: 1
-    max_ngram: 4
-  - name: "EmbeddingIntentClassifier"
-  - name: EntitySynonymMapper
-  - name: ResponseSelector
-    epochs: 100
+pipeline: supervised_embeddings
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
-
 policies:
   - name: MemoizationPolicy
-  - name: KerasPolicy # TEDPolicy can be used instead
-
-  # - name: TEDPolicy
-  # max_history: 5
-  # epochs: 100
-
+  - name: EmbeddingPolicy
+    max_history: 5
+    epochs: 100
   - name: MappingPolicy
