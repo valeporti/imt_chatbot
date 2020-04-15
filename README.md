@@ -20,6 +20,10 @@ pip(3) install rasa==1.7.4
 ```
 git clone https://github.com/valeporti/imt_chatbot.git
 ```
+> *next instruction is to train the chatbot, but, if needed, the already trained model could be downloaded*
+1. *download from [drive](https://drive.google.com/file/d/1yrBBqyFYrUyHH0sqRKkI9O5RVoyQ0sCg/view?usp=sharing)*
+2. put inside model's folder *imt_chatbot/models/*
+
 > Train the chatbot
 ```
 cd imt_chatbot
