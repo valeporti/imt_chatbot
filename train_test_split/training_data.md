@@ -1,0 +1,769 @@
+## intent:bot_challenge
+- are you a human?
+- are you a bot?
+- am I talking to a bot?
+
+## intent:query_knowledge_base
+- is the [third one](mention:3) [express](attribute)?
+- list some [supermarkets](object_type)
+- what is the [address](attribute) of the [second](mention:2)?
+- can you show me some [hospitals](object_type) options
+- which [supermarkets](object_type) have [home delivery](livraison_domicile)?
+- are there any [hospitals](object_type) in [Plouzané](city)?
+- which are the [medics](object_type) located in [Plouzané](city)?
+- what [hospitals](object_type) can you recommend?
+- does the [first one](mention:1) has [home service](attribute:livraison_domicile)?
+- list [supermarkets](object_type)
+- which is [its](mention) [link](attribute)?
+- name some [medics](object_type)
+- can you name some [pharmacies](object_type) please?
+- list some [pharmacies](object_type)
+- what [city](attribute) is [it](mention) in?
+- can you name some [supermarkets](object_type) please?
+- can i have [its](mention) [address](attribute)
+- please list some [medics](object_type) for me
+- what [medics](object_type) can you recommend?
+- can you show me some [supermarkets](object_type) options
+- are there any [pharmacies](object_type) in [Plouzané](city)?
+- do you have the [localisation](attribute) of [CHRU Morvan](object_type:hospitals)?
+- do you have any [hospitals](object_type)?
+- what is the [phone](attribute) of the [third](mention:2)?
+- can you tell me the [link](attribute) of [that](mention) one?
+- what is the [phone number](attribute:phone) of [CHRU Morvan](object_type:hospitals)?
+- are there any [medics](object_type) in [Brest](city)?
+- does [it](mention) has a [phone number](attribute:phone)?
+- what is the [link](attribute) of [U Express](object_type:supermarkets)?
+- can you tell me the [link](attribute) of [that one](mention)?
+- whats [its](mention) [address](attribute)
+- are there any [supermarkets](object_type) in [Brest](city)?
+- what is the [address](attribute) of [U Express](object_type:supermarkets)
+- do you have a [supermarkets](object_type) list?
+- do you know the [address](attribute) of [that one](mention)?
+- I would kike the list of [supermarkets](object_type) please.
+- which are the [pharmacies](object_type) located in [Brest](city)?
+- can you show me some [pharmacies](object_type) options
+- show me the [supermarkets](object_type) with [home delivery](livraison_domicile)
+- do you have any [supermarkets](object_type)?
+- list [pharmacies](object_type)
+- do you have any [pharmacies](object_type)?
+- what [supermarkets](object_type) can you recommend?
+- what is [its](mention) [address](attribute)
+- show me some [medics](object_type)
+- list some [hospitals](object_type)
+- what [medics](object_type) do you know?
+- what is the [address](attribute) of the [supermarkets](object_type)
+- do you have [its](mention) [address](attribute)
+- what [pharmacies](object_type) can you recommend?
+
+## intent:ask_howbuilt
+- What process was used to build you?
+- How did you come into being?
+- How did they build you?
+- By what means were you made?
+- Can you explain how you were created?
+- How were you made?
+- How were you constructed?
+- Do you know how you were made?
+
+## intent:ask_howdoing
+- How's life treating you friend?
+- Do you feel good?
+- are you having a good day
+- How are you?
+- how have you been
+- are you alright
+- What's up man
+- Is everything ok?
+- How've you been?
+
+## intent:ask_howold
+- what year were you born?
+- Tell me your birthday.
+- when is your birthday?
+- How old are you?
+- how old?
+
+## intent:ask_time
+- What's the time right now?
+- do you know the time?
+- Hi, I need the time.
+- Give me the time.
+- What is the time?
+- Can you tell me what time it is?
+
+## intent:ask_weather
+- how is the weather?
+- is it sunny?
+- Is it humid out there today?
+- Nice day out today?
+- Will the skies be clear today?
+- what's the weather like where you are?
+
+## intent:ask_whatspossible
+- so
+- what next
+- is it all?
+- More
+- something different to try?
+- hm that doesnt quite help me is there anything else you can do?
+- ...
+- and now what
+- what else can you do?
+- which functions are included
+- it's all?
+- help please
+- other recommendation.
+- may I try something else
+- can you help me in other way?
+- what now?
+- cool! can I do something else here?
+- um what now
+- might I try something different?
+- Can you do something else?
+- options
+- do you have more functions?
+- and...
+- so now what
+- that's all?
+- Hum...
+- and
+- can you give something else
+
+## intent:recommendation
+- What can I do to spent the time?
+- Could you find an activity for me?
+- I dont know what to do.
+- I need to find something to do
+- Find a recommendation for me
+- I need a new activity
+- jesus, give me something to do
+- Suggest me a good activity
+- I need a recommendation.
+- I am bored, find me activities to do
+- Can you find a recomendation for me?
+- Suggest me things to do
+- tell me what to do
+- Hey help me find things to do
+- What should I do during the confinement?
+- show me what can I do
+- can you suggest things to do
+- help me find activities
+- Can you recommend an activity?
+- Hey, can you help me with activities
+- Find me an activity
+- Would you find me an activity?
+- I want some fun.
+- Help me with finding original ideas to spend time
+
+## intent:nicetomeetyou
+- It's great to make your acquaintance!
+- Glad to meet you.
+- I'm pleased to meet you!
+- I had a great meeting with you
+- Glad to meet you
+- Great to meet you.
+- I'm so happy that I could meet you.
+- Great seeing you
+- Pleased to meet you.
+- It's great to get to know you!
+- It's a pleasure to make your acquaintance!
+- It’s great connecting with you.
+- It is indeed a pleasure to be able to meet you.
+- Glad we've met.
+- It was nice to have met you
+- Lovely to meet you.
+- Hi, glad to meet you.
+- See you around. It was a pleasure meeting you.
+- Great interacting with you
+- Thank you for this meeting. It was great to see you.
+- It was a pleasure to have your company.
+- Glad to make your acquaintance.
+- I'm thrilled to meet you!
+- Delighted to make your acquaintance.
+- It's wonderful to meet you!
+- I'm happy that we have met!
+- Nice to have met you.
+- It's good that I could meet you. It was a pleasure.
+- Pleased to meet you!
+- It's nice to finally meet you.
+- I am glad I met you.
+- Pleased to make your acquaintance!
+- Feels great to see you!
+- It's a pleasure to meet you!
+- Hi, nice to meet you!
+
+## intent:thanks
+- cool thank you
+- Thank you so much
+- perfect thank you
+- Thank's!
+- thank you anyways
+- ok thanks!
+- thanks you
+- thank you
+- Cool. Thanks
+- great thanks
+- Thanks!
+- thanks!
+- thanks a lot
+- Thanks for that
+- cool, thanks
+- thank u
+- Thanks
+- danke
+- thankyou
+- thanks this is great news
+- thnks
+- Thank you
+- Great, thanks
+- thx
+- amazing, thanks
+- ok thanks sara
+- cheers bro
+- cheers
+
+## intent:telljoke
+- Tell joke.
+- tell me a short joke
+- Let's hear a joke from you.
+- make me laugh with a joke
+- Would you tell me a joke
+- Will you tell me a joke.
+- Give me a joke.
+- tell me something funny, like a joke
+- say a joke that's funny
+- Would you share a joke with me.
+- What's a good joke?
+- Give me a funny joke.
+- Tell me the best joke you know.
+- Do you know any jokes?
+- say a joke that's so bad it's funny
+- give me a good joke
+- Tell me something that you think will make me laugh.
+- Please tell me a joke.
+- say a funny joke
+- say a joke
+- I need a good joke.
+- you can say a jok
+- make me laugh with a bad joke
+- Tell me something funny.
+- Make me laugh.
+- Share a joke with me!
+- Tell me something humorous!
+- Do you have any jokes?
+- Entertain me with a joke.
+- Could you tell me a joke.
+- Come up with a joke you think I'll find funny.
+- Can you tell a joke?
+
+## intent:mood_great
+- perfect
+- I feel pretty fine
+- i am feeling happy
+- I'm good
+- I am great
+- awesome
+- great
+- pretty cool :D
+- ok
+- WOW
+- doin great
+- Wow
+- I feel great
+- i am happy
+- wonderful
+- :)
+- nice
+- very good
+- cool
+- :D
+- cool man
+- nice.
+- really cool
+- happy
+- I am happy
+- I am feeling very good
+- I feel amazing
+- funny
+
+## intent:mood_unhappy
+- I don't feel good today
+- bad
+- I don't feel fine
+- very bad
+- I feel awful
+- i am sad
+- i'm sad
+- Now I'm sad
+- I am not very good
+- not very good
+- i feel sad
+- super sad
+- It's a sad day
+- I feel terrible
+- I am super sad
+- i sad
+- very sad
+- I am feeling bad
+- so sad
+- i am feel sad
+- I'm super sad
+- terrible
+- i am sad about that
+- very very sad
+- crappy joke
+- I'm sad
+- This is bad
+- i am very sad
+
+## intent:greet
+- hello
+- Guten Morgen
+- I said, helllllloooooO!!!!
+- Hellllooooooo
+- hiihihi
+- hey
+- hey bot
+- hey there
+- Good morning
+- HEllo
+- hallo
+- HI
+- hi
+- hi hi
+- yoo
+- konichiwa
+- hlo
+- halo
+- hello everybody
+- whats up
+- hey there..
+- heyho
+- hey, let's talk
+- hey let's talk
+- Bom dia
+- good moring
+- hey ther
+- hhola
+- bonjour
+- merhaba
+- hello is anybody there
+- hey bot!
+- Hello Bot
+- Hi!
+- hi there
+- Whats up
+- hey dude
+- hi folks
+- yo
+- jop
+- hi again
+- hi?
+- helo
+- Hi, bot
+- HEY
+- good morning
+- hello?
+- hello robot
+- hellio
+- hai
+- hi friend
+- Well hello there ;)
+- hi there it's me
+- hi Mister
+- ayyyy whaddup
+- Bonjour
+- hello sweet boy
+- hii
+- Hi bot
+- Hola
+- Hi'
+- halloooo
+- jojojo
+- ey boss
+- What is up?
+- hola
+- hell9o
+- hi sara
+- hello friend
+- Hei
+- whats popping
+- Hi,
+- Hi there
+- Hi
+- heyo
+- hi can you speak ?
+- Hey
+- halloo
+- wasssup
+- Hey bot
+- greet
+- hello there
+- Hi man
+- Heya
+- hello it is me again
+- Hieeeeeeeeeeeee
+- hi pal!
+- Hieee
+- heya
+- salut
+- hey there boy
+- helloooo
+- sup
+- hellooo
+- hieee
+- wasssup!
+
+## intent:deny
+- nope
+- i decline
+- nah I'm good
+- i don not like this
+- deny
+- no i dont want to accept :P lol
+- noooooooooooooooooooooooooooooooooooooooo
+- nop
+- NO DON"T WANT THIS!
+- no bots at all
+- i dont want to accept :P lol
+- no i don't accept
+- it sucks
+- no thank s
+- nope. i am good
+- this sucks
+- no, thanks
+- No.
+- stop it, i do not care!!!
+- Nevermind
+- I don't want to say
+- neither
+- noooooooooo
+- no i won't
+- no way
+- nope!
+- no i dont want to
+- no thank you
+- no and no again
+- sorry not right now
+- Neither
+- Never
+- nah
+- thanks but no thanks
+- nö
+- decline
+- Nopes
+- no :(
+- no ma'am
+- Not really
+- no, thankyou
+- still dont want to tell
+- I'm not going to give it to you
+- no, i hate it
+- No, thank you
+- Nah
+- i'm afraid not
+- no stop
+- never mind
+- nah, i'm good
+- i guess it means - no
+- no go
+- nehi
+- No
+- no, thank you
+- I dont want to tell
+- definitely not
+- not yet
+- I don't want to
+- non
+- absolutely not
+- no sorry
+- not going well at all
+- NEIN
+- No, not really.
+- n
+- no i can't
+- no
+- nah not for me
+- NO
+- no!!!!
+- No thank you
+- not really
+- i dont want to
+
+## intent:goodbye
+- see ya
+- ok, bye
+- goodbye.
+- byee
+- Bye bye
+- goodbye
+- gotta go
+- bye :P
+- bye bye bot
+- see you . bye
+- bye
+- adios
+- good bye rasa bot!
+- cya
+- bye .
+- ok bye
+- tlak to you later
+- adios?
+- then bye
+- bye was nice talking to you
+- k byyye #slay
+- ok.bye
+- good night
+- bye for now
+- ciao
+- farewell
+- bye bye
+- bye!
+- see you
+- toodle-oo
+- see u later
+
+## intent:affirm
+- coolio
+- yeeees
+- done
+- k
+- yes go ahead
+- lets do it
+- hell yeah
+- yes i agree
+- fair enough
+- okay..
+- a little
+- yea
+- nice
+- yes of course
+- sure thing
+- yes it was okay
+- yes I do
+- good.
+- ok...
+- ya cool
+- confirm
+- ok good
+- it is ok
+- Ofcourse
+- yes please!
+- great lets do that
+- fcourse
+- hell yes
+- yup
+- yap
+- yesyestyes
+- cool story bro
+- awesome
+- yes i have!
+- oki doki
+- yop
+- ye splease
+- I do
+- ya go for it
+- going super well
+- Yep!
+- yyeeeh
+- awesome!
+- SURE
+- yep
+- sure
+- of course
+- yeah do that
+- yes great
+- Yes I do
+- Okay!
+- yes please
+- okay cool
+- ok friend
+- yeeeeezzzzz
+- Yes please!
+- thats great
+- yesh
+- I'm sure I will!
+- yes accept please
+- agreed
+- yep. :/
+- ok
+- yes sirfr
+- Yup
+- I accept
+- ok, I behave now
+- ye
+- yes that's great
+- YUP
+- yes pls
+- great
+- ook
+- ok sara
+- Yes please
+- I'm using it
+- yep thats cool
+- yes i accept
+- great!
+- Awesome!
+- yes give me information
+- yeah
+- okie
+- please
+- ofcourse
+- ya please
+- that's great
+- yes it is
+- PLEASE
+- I get it
+- yesyesyes
+- yes, give me information, please
+- yes,i am
+- Yes, I accept
+- ja cool
+- Nice
+- yes pleae
+- i am!
+- ja thats great
+- Okay
+- yes, I'd love to
+- yeah sure
+- yez
+- Accept
+- yes.
+- well yes
+- I will
+- alright, cool
+- how nice!
+- lets do this
+- Sweet
+- ofcoure i do
+- okay
+- ok great
+- yes ...
+- yaps
+- yesssss
+- i want that
+- yes'
+- yep please
+- i accept
+- yaah
+- yessoo
+- YES
+- oui
+- fine
+- ok fine
+- thats good
+- oh awesome!
+- yas
+- perfect
+- yes that's what i want
+- top
+- accepted
+- ok, I understood
+- Ok let's start
+- ah ok
+- amayzing
+- i will!
+- uh-huh
+- yesss
+- yes you can
+- cool!
+- go ahead
+- Yes.
+- ja
+- Great
+- accept
+- yay
+- Yea
+- hm, i'd like that
+- yes baby
+- very much
+- ok i accept
+- Ok
+- Cool
+- kk
+- oh cool
+- fuck yeah!
+- jezz
+- cool :)
+- I agree
+- Sure
+- yes i have built a bot before
+- Yepp
+- ok, Sara
+- cool
+- I changed my mind. I want to accept it
+- good
+- thats fine
+- That would be great
+- oh super
+- that sounds fine
+- I am using it
+- Good
+- oh good !!
+- yres
+- Yeah
+- definitely yes without a doubt
+
+## synonym:1
+- first one
+
+## synonym:2
+- second one
+- second
+- third
+
+## synonym:3
+- third one
+
+## synonym:LAST
+- last one
+
+## synonym:hospitals
+- CHRU Morvan
+- hospital
+- medic centers
+- medical institution
+- health service
+- CHRU
+
+## synonym:link
+- web page
+- site
+- url
+- website
+- link address
+
+## synonym:livraison_domicile
+- home service
+
+## synonym:medics
+- clinics
+- clinic
+- medic
+- doctor
+- doctors
+
+## synonym:pharmacies
+- pharmacie
+
+## synonym:phone
+- phone number
+
+## synonym:supermarkets
+- U Express
+- supermarket
+- super
+- supers
+
+## lookup:supermarkets
+- Carrefour
+- Lidl
+- U Express
+
+## lookup:hospitals
+- CHRU Cavale Blanche
+- CHRU Morvan
+
+## lookup:city
+- Plouzané
+- Brest

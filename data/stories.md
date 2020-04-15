@@ -43,8 +43,6 @@
 * deny
   - utter_another_try
 * affirm
-  - utter_unhappy
-  - utter_cheer_up
   - utter_cheer_up_material
   - utter_did_that_help
 * affirm
@@ -59,8 +57,6 @@
 * deny
   - utter_another_try
 * affirm
-  - utter_unhappy
-  - utter_cheer_up
   - utter_cheer_up_material
   - utter_did_that_help
 * deny

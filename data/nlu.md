@@ -19,7 +19,7 @@
 ## intent:query_knowledge_base
 - I would kike the list of [supermarkets](object_type:supermarkets) please.
 - what [supermarkets](object_type:supermarkets) can you recommend?
-- are there any [supermarkets](object_type:supermarkets) in [Plouzané](city)?
+- are there any [supermarkets](object_type:supermarkets) in [Brest](city)?
 - which are the [supermarkets](object_type:supermarkets) located in [Plouzané](city)?
 - do you have a [supermarkets](object_type:supermarkets) list? 
 - list some [supermarkets](object_type:supermarkets)
@@ -35,7 +35,7 @@
 - what is the [address](attribute:address) of [U Express](object_type:supermarkets)
 - what is [its](mention) [address](attribute:address)
 - may i have the [address](attribute:address) of the [supermarkets](object_type:supermarkets)
-- what's [its](mention) [address](attribute:address)
+- whats [its](mention) [address](attribute:address)
 - do you have [its](mention) [address](attribute:address)
 - give me [its](mention) [address](attribute:address)
 - what is [its](mention) [address](attribute:address)
@@ -48,25 +48,29 @@
 - what is the [link](attribute:link) of [U Express](object_type:supermarkets)?
 - what [address](attribute:address) do [they](mention) have?
 - can you tell me the [link](attribute:link) of [that](mention) one?
+- which is [its](mention) [link](attribute)?
 - what [hospitals](object_type:hospitals) can you recommend?
 - list some [hospitals](object_type:hospitals)
+- which is the [phone](attribute) of [it](mention)?
+- does [it](mention) has a [phone number](attribute:phone)?
 - can you name some [hospitals](object_type:hospitals) please?
 - can you show me some [hospitals](object_type:hospitals) options
 - list [hospitals](object_type:hospitals)
 - are there any [hospitals](object_type:hospitals) in [Plouzané](city)?
-- which are the [hospitals](object_type:hospitals) located in [Plouzané](city)?
+- which are the [hospitals](object_type:hospitals) located in [Brest](city)?
 - do you have any [hospitals](object_type:hospitals)?
 - do you know the [localisation](attribute:localisation) of [that one](mention)?
 - do you know the [address](attribute:address) of the [second one](mention:2)?
 - do you have the [localisation](attribute:localisation) of [CHRU Morvan](object_type:hospitals)?
 - what is the [phone number](attribute:phone) of [CHRU Morvan](object_type:hospitals)?
 - can you tell me the [link](attribute:link) of [that one](mention)?
-- which is [its](mention) [link](attribute:link)?
 - what [medics](object_type:medics) can you recommend?
 - please list some [medics](object_type:medics) for me
 - what [medics](object_type:medics) do you know?
 - name some [medics](object_type:medics)
 - show me some [medics](object_type:medics)
+- are there any [medics](object_type:medics) in [Brest](city)?
+- which are the [medics](object_type:medics) located in [Plouzané](city)?
 - do you have the [phone](attribute:phone) of the [last one](mention:LAST)?
 - what is the [address](attribute:address) of the [second](mention:2)?
 - what is the [phone](attribute:phone) of the [third](mention:2)?
@@ -74,12 +78,12 @@
 - is the [third one](mention:3) [express](attribute:express)?
 - what [pharmacies](object_type:pharmacies) can you recommend?
 - list some [pharmacies](object_type:pharmacies)
-- which is the [phone](attribute:phone) of [it](mention)?
-- does [it](mention) has a [phone number](attribute:phone)?
 - can you name some [pharmacies](object_type:pharmacies) please?
 - can you show me some [pharmacies](object_type:pharmacies) options
 - list [pharmacies](object_type:pharmacies)
 - do you have any [pharmacies](object_type:pharmacies)?
+- are there any [pharmacies](object_type:pharmacies) in [Plouzané](city)?
+- which are the [pharmacies](object_type:pharmacies) located in [Brest](city)?
 
 ## intent:ask_howbuilt
 - How did they build you?
